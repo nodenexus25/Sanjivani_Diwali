@@ -56,7 +56,7 @@ export function MegaMenu({ open, onClose, id }: MegaMenuProps) {
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
           onKeyDown={handleKeyDown}
-          className="absolute inset-x-0 top-full border-t border-sand-300 bg-paper"
+          className="absolute inset-x-0 top-full border-t border-sand-300 bg-ivory"
         >
           <Container className="py-9">
             <ul className="grid gap-x-8 gap-y-1 sm:grid-cols-2 lg:grid-cols-4">
@@ -67,7 +67,7 @@ export function MegaMenu({ open, onClose, id }: MegaMenuProps) {
                     {...(business.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                     data-menu-item
                     onClick={onClose}
-                    className="group block rounded-[4px] border border-transparent p-3.5 transition-colors duration-300 ease-brand hover:border-sand-300 hover:bg-ivory focus-visible:border-sand-300 focus-visible:bg-ivory"
+                    className="group block rounded-[4px] border border-transparent p-3.5 transition-colors duration-300 ease-brand hover:border-sand-300 hover:bg-sand-300 focus-visible:border-sand-300 focus-visible:bg-sand-300"
                   >
                     <span className="font-sans text-[12px] font-bold uppercase tracking-[0.14em] text-green-700">
                       {t(`businesses.${business.id}.tag`)}
