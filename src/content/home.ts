@@ -1,6 +1,7 @@
 import type {
   Business,
   CircularNode,
+  FooterLink,
   HeroSlide,
   MediaAsset,
   NewsItem,
@@ -199,18 +200,20 @@ export const pathways: Pathway[] = [
   { id: 'admissions', href: '#contact', tone: 'light', external: true },
 ];
 
-export const footerBusinessLinks = businesses.map((business) => ({
+export const footerBusinessLinks: FooterLink[] = businesses.map((business) => ({
   id: business.id,
   href: business.href,
+  external: business.external,
 }));
 
-export const footerCompanyLinks = [
+export const footerCompanyLinks: FooterLink[] = [
   { id: 'about', href: '#about' },
   { id: 'leadership', href: '#about' },
   { id: 'sustainability', href: '#sustainability' },
   { id: 'news', href: '#news' },
   { id: 'careers', href: '#careers' },
-] as const;
+  { id: 'edge', href: 'https://www.sanjivaniedge.com', external: true },
+];
 
 export const searchSuggestions: SearchSuggestion[] = [
   { id: 'cbg', href: '#sustainability' },

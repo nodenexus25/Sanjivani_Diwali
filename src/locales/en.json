@@ -38,13 +38,7 @@
   },
   "megaMenu": {
     "aria": "Businesses menu",
-    "all": "All businesses",
-    "featured": {
-      "eyebrow": "A national first · October 2025",
-      "title": "India's first cooperative multi-feed CBG plant",
-      "body": "A multi-feed plant at Kopargaon producing compressed biogas and potash granules from the by-products of every crushing season.",
-      "cta": "See the project"
-    }
+    "all": "All businesses"
   },
   "drawer": {
     "aria": "Site menu",
@@ -105,9 +99,8 @@
     "title": "A cooperative idea that grew into an institution.",
     "p1": "In 1960, Sahakar Maharshi Shankarrao Genuji Kolhe (1929–2022), former Minister of Maharashtra, brought the farmers of Kopargaon together to build their own sugar mill. What began as a cooperative of cane growers became an integrated rural enterprise — in sugar, green energy, agri-inputs, pharmaceuticals and education.",
     "p2": "In 1983 he founded the Sanjivani Rural Education Society, so that the children of farmers and workers could become engineers, pharmacists and leaders without leaving rural Maharashtra.",
-    "portraitLabel": "Sepia-toned portrait of Late Shri Shankarrao G. Kolhe [CLIENT TO SUPPLY]",
+    "portraitLabel": "Sepia-toned portrait of Late Shri Shankarrao G. Kolhe",
     "leadershipTitle": "Leadership",
-    "leadershipNote": "Names, titles and order to be confirmed by the client before launch.",
     "link": "Our legacy and leadership"
   },
   "leadership": {
@@ -142,8 +135,8 @@
     "pharma": {
       "tag": "PHARMACEUTICALS",
       "title": "Sanjivani pharma formulations",
-      "desc": "Quality formulations built on the group's pharmacy education and research strength. [CLIENT: product range]",
-      "mediaLabel": "Pharmaceutical formulations facility [CLIENT TO SUPPLY]"
+      "desc": "Quality formulations built on the group's pharmacy education and research strength.",
+      "mediaLabel": "Pharmaceutical formulations facility"
     },
     "education": {
       "tag": "EDUCATION",
@@ -193,7 +186,6 @@
     "greeting": "शुभ दीपावली",
     "message": "This festival of lights, we give thanks to the farmers who grow with us, the students who learn with us and the families who have trusted Sanjivani for sixty-six years.",
     "signoff": "— The Kolhe family and everyone at the Sanjivani Group",
-    "signoffNote": "Wording to be approved by the client.",
     "cta": "Watch our Deepavali film",
     "ecard": "Send a Deepavali e-card",
     "ecardAria": "Deepavali greeting card preview",
@@ -212,12 +204,12 @@
     "university": {
       "category": "Education",
       "title": "Sanjivani University signs an MoU with the University of Technology & Applied Science, Shinas, Oman",
-      "mediaLabel": "Sanjivani University [CLIENT TO SUPPLY]"
+      "mediaLabel": "Sanjivani University"
     },
     "crushing": {
       "category": "Sugar",
       "title": "Crushing season 2026–27 begins",
-      "mediaLabel": "Crushing season at the sugar factory [CLIENT TO SUPPLY]"
+      "mediaLabel": "Crushing season at the sugar factory"
     }
   },
   "pathways": {
@@ -240,7 +232,7 @@
   "video": {
     "title": "Our Deepavali film",
     "aria": "Deepavali film",
-    "unavailable": "[CLIENT TO SUPPLY — Deepavali film, MP4 or YouTube ID]"
+    "unavailable": "Our Deepavali film will play here soon."
   },
   "footer": {
     "contactTitle": "Contact",
@@ -265,7 +257,6 @@
     "linkedin": "LinkedIn",
     "youtube": "YouTube",
     "instagram": "Instagram",
-    "socialNote": "[SOCIAL LINKS — CLIENT TO SUPPLY]",
     "mapCta": "View on map",
     "mapTitle": "Sanjivani Group, Kopargaon on Google Maps",
     "mapHint": "The map loads from Google only after you ask for it.",
@@ -274,7 +265,8 @@
       "leadership": "Leadership",
       "sustainability": "Sustainability",
       "news": "Newsroom",
-      "careers": "Careers"
+      "careers": "Careers",
+      "edge": "Sanjivani Edge"
     },
     "business": {
       "sugar": "Sugar & allied",

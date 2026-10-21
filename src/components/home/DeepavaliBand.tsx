@@ -96,7 +96,6 @@ export function DeepavaliBand() {
           </p>
 
           <p className="mt-8 text-[16px] text-diya-sand">{t('deepavali.signoff')}</p>
-          <p className="mt-1 text-[13px] text-diya-sand opacity-70">{t('deepavali.signoffNote')}</p>
 
           <div className="mt-10">
             <Button variant="primary" withArrow onClick={() => setVideoOpen(true)}>

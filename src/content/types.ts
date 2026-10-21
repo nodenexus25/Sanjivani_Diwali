@@ -62,6 +62,13 @@ export interface NewsItem {
   media: MediaAsset;
 }
 
+/** A footer column link. `external` marks destinations outside the group site. */
+export interface FooterLink {
+  id: string;
+  href: string;
+  external?: boolean;
+}
+
 export interface Pathway {
   id: string;
   href: string;

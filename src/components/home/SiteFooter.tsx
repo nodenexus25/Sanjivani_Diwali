@@ -97,9 +97,15 @@ export function SiteFooter() {
                   <li key={link.id}>
                     <a
                       href={link.href}
+                      {...(link.external
+                        ? { target: '_blank', rel: 'noopener noreferrer' }
+                        : {})}
                       className="inline-flex min-h-[44px] items-center text-[15px] text-brown-200 transition-colors duration-300 ease-brand hover:text-ivory focus-visible:outline-none"
                     >
                       {t(`footer.business.${link.id}`)}
+                      {link.external ? (
+                        <span className="sr-only">{t('common.external')}</span>
+                      ) : null}
                     </a>
                   </li>
                 ))}
@@ -115,9 +121,15 @@ export function SiteFooter() {
                   <li key={link.id}>
                     <a
                       href={link.href}
+                      {...(link.external
+                        ? { target: '_blank', rel: 'noopener noreferrer' }
+                        : {})}
                       className="inline-flex min-h-[44px] items-center text-[15px] text-brown-200 transition-colors duration-300 ease-brand hover:text-ivory focus-visible:outline-none"
                     >
                       {t(`footer.company.${link.id}`)}
+                      {link.external ? (
+                        <span className="sr-only">{t('common.external')}</span>
+                      ) : null}
                     </a>
                   </li>
                 ))}
@@ -192,11 +204,6 @@ export function SiteFooter() {
           <p className="text-[14px] text-brown-300">{t('footer.rights')}</p>
 
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            {/* Social profiles are not supplied yet, so the placeholder note shows
-                here. Once `socialLinks` from `@/content/home` is populated, render
-                the LinkedIn / YouTube / Instagram entries (t('footer.linkedin')…)
-                with their lucide icons, target="_blank" and rel="noopener noreferrer". */}
-            <span className="text-[13px] text-brown-300">{t('footer.socialNote')}</span>
             <a
               href="#"
               className="inline-flex min-h-[44px] items-center text-[14px] text-brown-200 transition-colors duration-300 ease-brand hover:text-ivory focus-visible:outline-none"

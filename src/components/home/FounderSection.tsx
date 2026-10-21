@@ -48,8 +48,6 @@ export function FounderSection() {
                   </li>
                 ))}
               </ul>
-
-              <p className="mt-8 text-[13px] text-brown-700">{t('founder.leadershipNote')}</p>
             </div>
 
             <a

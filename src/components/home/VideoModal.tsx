@@ -13,9 +13,9 @@ interface VideoModalProps {
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 /**
- * Lazy-loaded Deepavali film modal. No film exists yet, so the body shows the
- * client placeholder; the real player is mounted here (and only while `open`)
- * once the MP4 or YouTube ID is supplied.
+ * Lazy-loaded Deepavali film modal. No film exists yet, so the body shows a
+ * holding line; the real player is mounted here (and only while `open`) once
+ * the MP4 or YouTube ID is supplied.
  */
 export function VideoModal({ open, onClose }: VideoModalProps) {
   const { t } = useTranslation();
