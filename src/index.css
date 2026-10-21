@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  /* Anchor jumps must clear the fixed header; the hero itself sits at the top. */
+  main [id],
+  footer [id] {
+    scroll-margin-top: calc(var(--header-height) + 24px);
+  }
+
+  #top {
+    scroll-margin-top: 0;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Full-screen hero: at least the viewport, never shorter than 640px. */
+  .min-h-hero {
+    min-height: max(640px, 100vh);
+    min-height: max(640px, 100svh);
+  }
+}
+
+/* Ambient Deepavali particles (disabled under reduced motion). */
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateY(-260px) scale(0.6);
+    opacity: 0;
+  }
+}
+
+.particle {
+  animation: rise 12s linear infinite;
+}
+
+/* Full-bleed hero media drift. The peak scale is kept low so the compositor
+   magnifies the layer texture as little as possible — a larger zoom on a
+   viewport-wide photograph reads as softness rather than motion. */
+@keyframes ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.04);
+  }
+}
+
+.ken-burns {
+  animation: ken-burns 16s ease-in-out infinite alternate;
+}
+
+/* Scroll cue: a 1px line travelling down its own track. */
+@keyframes scroll-cue {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(200%);
+  }
+}
+
+.scroll-cue {
+  animation: scroll-cue 2.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particle {
+    animation: none;
+    opacity: 0.2;
+  }
+
+  .ken-burns,
+  .scroll-cue {
+    animation: none;
+  }
+}

@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vercel
+.netlify
+.env
+.env.*
+!.env.example
+
+# Raw files pulled from the live Sanjivani entity sites. The optimised copies
+# produced by `.asset-build.mjs` are committed in `src/assets/images/`.
+.asset-staging

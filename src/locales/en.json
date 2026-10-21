@@ -1,0 +1,296 @@
+{
+  "brand": {
+    "name": "SANJIVANI",
+    "sub": "GROUP · SINCE 1960"
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "menu": "Menu",
+    "close": "Close",
+    "search": "Search",
+    "contact": "Contact us",
+    "prev": "Previous slide",
+    "next": "Next slide",
+    "pause": "Pause slideshow",
+    "play": "Play slideshow",
+    "viewAll": "View all",
+    "placeholderTag": "Placeholder",
+    "external": "opens in a new tab",
+    "english": "EN",
+    "marathi": "मराठी",
+    "language": "Language",
+    "switchTo": "Switch to {{language}}",
+    "goToSlide": "Go to slide {{number}}: {{title}}"
+  },
+  "festiveStrip": {
+    "message": "✦ Shubh Deepavali from the Sanjivani family — wishing our farmers, students and partners a year of light and growth.",
+    "link": "Read our message",
+    "dismiss": "Dismiss festive message"
+  },
+  "nav": {
+    "aria": "Primary",
+    "about": "About us",
+    "businesses": "Businesses",
+    "sustainability": "Sustainability",
+    "education": "Education",
+    "news": "Newsroom",
+    "careers": "Careers"
+  },
+  "megaMenu": {
+    "aria": "Businesses menu",
+    "all": "All businesses",
+    "featured": {
+      "eyebrow": "A national first · October 2025",
+      "title": "India's first cooperative multi-feed CBG plant",
+      "body": "A multi-feed plant at Kopargaon producing compressed biogas and potash granules from the by-products of every crushing season.",
+      "cta": "See the project"
+    }
+  },
+  "drawer": {
+    "aria": "Site menu",
+    "businesses": "Businesses"
+  },
+  "search": {
+    "aria": "Site search",
+    "title": "Search Sanjivani",
+    "placeholder": "Search businesses, news, careers…",
+    "submit": "Search",
+    "suggestions": "Suggested pages",
+    "hint": "Search is UI-only in this build. Results arrive once the group's content index is connected."
+  },
+  "hero": {
+    "aria": "Highlights",
+    "slideLabel": "{{number}} of {{total}}",
+    "announce": "Slide {{number}} of {{total}}: {{title}}",
+    "secondary": "Our story",
+    "scroll": "Scroll",
+    "mediaLabel": "Hero media",
+    "slides": {
+      "deepavali": {
+        "eyebrow": "Shubh Deepavali",
+        "title": "May every lamp light a field, a classroom, a home.",
+        "body": "From all of us at the Sanjivani Group — warm wishes to our farmer members, students, partners and their families this festival of lights.",
+        "cta": "Our festive message",
+        "tab": "Deepavali",
+        "mediaLabel": "Diyas at dusk on the Kopargaon campus"
+      },
+      "greenEnergy": {
+        "eyebrow": "Green energy",
+        "title": "India's first cooperative compressed biogas plant.",
+        "body": "Commissioned at Kopargaon in October 2025 — turning molasses and press mud into clean fuel, and potash back for our fields.",
+        "cta": "See the project",
+        "tab": "Green energy",
+        "mediaLabel": "The CBG plant at sunrise"
+      },
+      "education": {
+        "eyebrow": "Education since 1983",
+        "title": "World-class learning at the doorstep of rural Maharashtra.",
+        "body": "Sanjivani University and its institutes — from early schooling to engineering, pharmacy and management.",
+        "cta": "Explore Sanjivani University",
+        "tab": "Education",
+        "mediaLabel": "Students on the Sanjivani University campus"
+      },
+      "legacy": {
+        "eyebrow": "Since 1960",
+        "title": "Built by farmers. Growing for six decades.",
+        "body": "Founded as a cooperative sugar mill by Late Shri Shankarrao Kolhe, the group now spans sugar, energy, agri-inputs, pharma, education and IT.",
+        "cta": "Explore our businesses",
+        "tab": "Our legacy",
+        "mediaLabel": "Sugarcane fields at golden hour"
+      }
+    }
+  },
+  "founder": {
+    "eyebrow": "Our founder · Our foundation",
+    "title": "A cooperative idea that grew into an institution.",
+    "p1": "In 1960, Sahakar Maharshi Shankarrao Genuji Kolhe (1929–2022), former Minister of Maharashtra, brought the farmers of Kopargaon together to build their own sugar mill. What began as a cooperative of cane growers became an integrated rural enterprise — in sugar, green energy, agri-inputs, pharmaceuticals and education.",
+    "p2": "In 1983 he founded the Sanjivani Rural Education Society, so that the children of farmers and workers could become engineers, pharmacists and leaders without leaving rural Maharashtra.",
+    "portraitLabel": "Sepia-toned portrait of Late Shri Shankarrao G. Kolhe [CLIENT TO SUPPLY]",
+    "leadershipTitle": "Leadership",
+    "leadershipNote": "Names, titles and order to be confirmed by the client before launch.",
+    "link": "Our legacy and leadership"
+  },
+  "leadership": {
+    "bipindada": "Chairman, Sanjivani Group of Industries",
+    "nitindada": "Chairman, Sanjivani Rural Education Society",
+    "vivek": "Chairman, Sahakar Maharshi Shankarrao Kolhe SSK",
+    "amit": "Managing Trustee, Sanjivani Rural Education Society"
+  },
+  "businesses": {
+    "eyebrow": "Our businesses",
+    "title": "One root. Many ways we serve rural India.",
+    "viewAll": "View all companies",
+    "explore": "Explore",
+    "sugar": {
+      "tag": "SUGAR & ALLIED",
+      "title": "Sahakar Maharshi Shankarrao Kolhe SSK",
+      "desc": "Our cooperative sugar mill since 1960 — the heart of the group and of the cane economy around Kopargaon.",
+      "mediaLabel": "Sugar factory and cane yard at Kopargaon"
+    },
+    "energy": {
+      "tag": "GREEN ENERGY",
+      "title": "Ethanol, co-generation & biogas",
+      "desc": "Fuel ethanol, renewable power for the grid and compressed biogas from the by-products of every crushing season.",
+      "mediaLabel": "Distillery and co-generation units"
+    },
+    "agri": {
+      "tag": "AGRI-INPUTS",
+      "title": "Bio-compost & potash granules",
+      "desc": "Returning nutrients to the soil — bio-compost and spray-dried potash granules made from our own process streams.",
+      "mediaLabel": "Bio-compost and potash granule bags"
+    },
+    "pharma": {
+      "tag": "PHARMACEUTICALS",
+      "title": "Sanjivani pharma formulations",
+      "desc": "Quality formulations built on the group's pharmacy education and research strength. [CLIENT: product range]",
+      "mediaLabel": "Pharmaceutical formulations facility [CLIENT TO SUPPLY]"
+    },
+    "education": {
+      "tag": "EDUCATION",
+      "title": "Sanjivani University & Institutes",
+      "desc": "Sanjivani Rural Education Society — institutes and a university serving students from across India.",
+      "mediaLabel": "Sanjivani University campus"
+    },
+    "rural": {
+      "tag": "RURAL DEVELOPMENT",
+      "title": "Credit societies & women's SHGs",
+      "desc": "Strengthening primary credit societies and self-help groups so that rural capital stays in rural hands.",
+      "mediaLabel": "Women's self-help group meeting"
+    },
+    "it": {
+      "tag": "IT & CONSULTING",
+      "title": "Sanjivani Edge — IT, ERP & digital transformation",
+      "desc": "The group's IT services and consulting business — ERP, cloud, cybersecurity and software engineering for manufacturing, BFSI and healthcare enterprises.",
+      "mediaLabel": "IT infrastructure and network operations centre"
+    }
+  },
+  "milestone": {
+    "eyebrow": "A national first · October 2025",
+    "title": "India's first cooperative compressed biogas plant.",
+    "body": "Inaugurated by the Union Minister of Cooperation at Kopargaon, our multi-feed CBG and potash granule plant turns molasses, press mud and crop residue into clean fuel and fertiliser — a model the Centre plans to take to more cooperative sugar mills.",
+    "cta": "Read the story",
+    "mediaLabel": "Aerial view of the CBG and potash granule plant at Kopargaon"
+  },
+  "circular": {
+    "label": "Our circular economy — nothing from the cane is wasted",
+    "cane": { "title": "Sugarcane", "note": "from farmer members" },
+    "sugar": { "title": "Sugar", "note": "crushing & refining" },
+    "molasses": { "title": "Molasses", "note": "to the distillery" },
+    "ethanol": { "title": "Ethanol & power", "note": "clean fuel, green grid" },
+    "biogas": { "title": "Biogas", "note": "press mud & residue" },
+    "potash": { "title": "Potash & compost", "note": "back to the fields" }
+  },
+  "timeline": {
+    "eyebrow": "Six decades of firsts",
+    "title": "From one mill to a movement.",
+    "y1960": "Cooperative sugar mill founded by Shri Shankarrao Kolhe at Shingnapur, Kopargaon.",
+    "y1982": "Sanjivani K.B.P. Polytechnic opens its doors to rural students.",
+    "y1983": "Sanjivani Rural Education Society and College of Engineering founded.",
+    "university": "Sanjivani University established, extending the education legacy.",
+    "y2025": "India's first cooperative multi-feed CBG and potash plant inaugurated."
+  },
+  "deepavali": {
+    "greeting": "शुभ दीपावली",
+    "message": "This festival of lights, we give thanks to the farmers who grow with us, the students who learn with us and the families who have trusted Sanjivani for sixty-six years.",
+    "signoff": "— The Kolhe family and everyone at the Sanjivani Group",
+    "signoffNote": "Wording to be approved by the client.",
+    "cta": "Watch our Deepavali film",
+    "ecard": "Send a Deepavali e-card",
+    "ecardAria": "Deepavali greeting card preview",
+    "ecardTitle": "Shubh Deepavali",
+    "ecardFrom": "With warm wishes, the Sanjivani Group"
+  },
+  "news": {
+    "eyebrow": "Newsroom",
+    "title": "Latest from Sanjivani",
+    "all": "All news and media",
+    "cbg": {
+      "category": "Green energy",
+      "title": "Union Cooperation Minister inaugurates India's first cooperative CBG plant at Kopargaon",
+      "mediaLabel": "Inauguration of the CBG plant"
+    },
+    "university": {
+      "category": "Education",
+      "title": "Sanjivani University signs an MoU with the University of Technology & Applied Science, Shinas, Oman",
+      "mediaLabel": "Sanjivani University [CLIENT TO SUPPLY]"
+    },
+    "crushing": {
+      "category": "Sugar",
+      "title": "Crushing season 2026–27 begins",
+      "mediaLabel": "Crushing season at the sugar factory [CLIENT TO SUPPLY]"
+    }
+  },
+  "pathways": {
+    "careers": {
+      "eyebrow": "CAREERS",
+      "title": "Grow with Sanjivani",
+      "text": "Roles across our plants, campuses and offices in Kopargaon and Pune."
+    },
+    "partner": {
+      "eyebrow": "PARTNER WITH US",
+      "title": "Farmers, suppliers and industry",
+      "text": "Cane registration, biomass supply, ethanol and CBG offtake, and research tie-ups."
+    },
+    "admissions": {
+      "eyebrow": "ADMISSIONS 2027–28",
+      "title": "Study at Sanjivani University",
+      "text": "Engineering, pharmacy, management, sciences and more — from school to doctorate."
+    }
+  },
+  "video": {
+    "title": "Our Deepavali film",
+    "aria": "Deepavali film",
+    "unavailable": "[CLIENT TO SUPPLY — Deepavali film, MP4 or YouTube ID]"
+  },
+  "footer": {
+    "contactTitle": "Contact",
+    "address": "Sahajanand Nagar, Shingnapur, Kopargaon, Ahilyanagar, Maharashtra, India",
+    "officeLabel": "Sanjivani Edge — Noida office",
+    "officeAddress": "3rd Floor, Akasa Co-Working, Office No. 10, Trapezoid IT Park, C-27, Sector 62, Noida 201309",
+    "phone": "+91 02423 224120 / 224121 / 224122",
+    "email": "contactus@sanjivanigroup.org.in",
+    "businessesTitle": "BUSINESSES",
+    "companyTitle": "COMPANY",
+    "newsletterTitle": "STAY IN TOUCH",
+    "newsletterText": "Group news and festive greetings, a few times a year.",
+    "newsletterLabel": "Email address",
+    "newsletterPlaceholder": "you@example.com",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing…",
+    "subscribed": "Thank you — you are on the list.",
+    "invalidEmail": "Please enter a valid email address.",
+    "rights": "© 2026 Sanjivani Group, Kopargaon. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "linkedin": "LinkedIn",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "socialNote": "[SOCIAL LINKS — CLIENT TO SUPPLY]",
+    "mapCta": "View on map",
+    "mapTitle": "Sanjivani Group, Kopargaon on Google Maps",
+    "mapHint": "The map loads from Google only after you ask for it.",
+    "company": {
+      "about": "Our legacy",
+      "leadership": "Leadership",
+      "sustainability": "Sustainability",
+      "news": "Newsroom",
+      "careers": "Careers"
+    },
+    "business": {
+      "sugar": "Sugar & allied",
+      "energy": "Green energy",
+      "agri": "Agri-inputs",
+      "pharma": "Pharmaceuticals",
+      "education": "Education",
+      "rural": "Rural finance",
+      "it": "Information technology"
+    }
+  },
+  "meta": {
+    "title": "Sanjivani Group — Six decades of growing Maharashtra",
+    "festiveTitle": "Sanjivani Group — Shubh Deepavali",
+    "description": "Founded in 1960 as a cooperative sugar mill at Kopargaon, the Sanjivani Group today spans sugar, green energy, agri-inputs, pharmaceuticals, education, rural development and information technology.",
+    "ogAlt": "Sanjivani Group, Kopargaon",
+    "ogFestiveAlt": "Shubh Deepavali from the Sanjivani Group"
+  }
+}
