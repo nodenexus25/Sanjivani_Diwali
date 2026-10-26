@@ -56,6 +56,17 @@ export const navigation = [
  */
 export const heroSlides: HeroSlide[] = [
   {
+    id: 'legacy',
+    ctaHref: '#businesses',
+    secondaryHref: '#about',
+    objectPosition: '56% center',
+    media: {
+      type: 'image',
+      src: heroLegacy,
+      labelKey: 'hero.slides.legacy.mediaLabel',
+    },
+  },
+  {
     id: 'greenEnergy',
     ctaHref: '#sustainability',
     secondaryHref: '#about',
@@ -75,17 +86,6 @@ export const heroSlides: HeroSlide[] = [
       type: 'image',
       src: heroEducation,
       labelKey: 'hero.slides.education.mediaLabel',
-    },
-  },
-  {
-    id: 'legacy',
-    ctaHref: '#businesses',
-    secondaryHref: '#about',
-    objectPosition: '56% center',
-    media: {
-      type: 'image',
-      src: heroLegacy,
-      labelKey: 'hero.slides.legacy.mediaLabel',
     },
   },
 ];
