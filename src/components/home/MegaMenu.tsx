@@ -56,7 +56,7 @@ export function MegaMenu({ open, onClose, id }: MegaMenuProps) {
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
           onKeyDown={handleKeyDown}
-          className="absolute inset-x-0 top-full border-t border-sand-300 bg-ivory"
+          className="mega-scroll absolute inset-x-0 top-full max-h-[calc(100dvh_-_var(--header-height)_-_24px)] overflow-y-auto overscroll-contain border-t border-sand-300 bg-ivory"
         >
           <Container className="py-9">
             <ul className="grid gap-x-8 gap-y-1 sm:grid-cols-2 lg:grid-cols-4">

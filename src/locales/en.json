@@ -74,10 +74,10 @@
       "legacy": {
         "eyebrow": "Since 1960",
         "title": "Built by farmers. Growing for six decades.",
-        "body": "Founded as a cooperative sugar mill by Late Shri Shankarrao Kolhe, the group now spans sugar, energy, agri-inputs, fisheries, pharma, education and IT.",
+        "body": "Founded as a cooperative sugar mill by Late Shri Shankarrao Kolhe, the group now spans sugar, spirits, dairy, energy, agri-inputs, fisheries, pharma, education and IT.",
         "cta": "Explore our businesses",
         "tab": "Our legacy",
-        "mediaLabel": "Tree of partnerships at golden hour"
+        "mediaLabel": "Tree of initiatives at sunset"
       }
     }
   },
@@ -112,13 +112,55 @@
         "allied": {
           "title": "Allied businesses",
           "items": {
-            "dairy": {
-              "title": "Sanjivani dairy plant",
-              "body": "Milk and dairy products within the group's rural consumer portfolio."
-            },
             "jaggery": {
               "title": "Jaggery industry",
               "body": "Traditional jaggery blocks, powder and cubes under the Amrut range."
+            }
+          }
+        }
+      }
+    },
+    "spirits": {
+      "tag": "SPIRITS",
+      "title": "Sanjivani Spirits",
+      "desc": "The group's liquor business — quality, affordable spirits from its own distillery at Kopargaon.",
+      "mediaLabel": "Sanjivani Spirits emblem",
+      "details": {
+        "operations": {
+          "title": "Operations",
+          "items": {
+            "distillery": {
+              "title": "Distillery",
+              "body": "Spirit made in a finely filtered vacuum distillation plant at the group's Kopargaon works."
+            },
+            "portfolio": {
+              "title": "Product range",
+              "body": "The Bobby Santra, Zingat Santra and Sanjivani Santra labels make up the group's flavoured-spirits range."
+            }
+          }
+        }
+      }
+    },
+    "dairy": {
+      "tag": "DAIRY",
+      "title": "Sanjivani dairy",
+      "desc": "Milk and dairy products for the group's rural consumer portfolio — from member farmers' herds to everyday dairy.",
+      "mediaLabel": "Sanjivani dairy plant",
+      "details": {
+        "operations": {
+          "title": "Operations",
+          "items": {
+            "plant": {
+              "title": "Dairy plant",
+              "body": "Milk processing within the group's Kopargaon operations."
+            },
+            "products": {
+              "title": "Milk & dairy products",
+              "body": "Fresh milk and everyday dairy products for the group's rural consumer portfolio."
+            },
+            "members": {
+              "title": "Member farmers",
+              "body": "Milk procurement that keeps value with the group's farmer members."
             }
           }
         }
@@ -382,9 +424,8 @@
   },
   "footer": {
     "contactTitle": "Contact",
+    "registeredLabel": "Registered office",
     "address": "Sahajanand Nagar, Shingnapur, Kopargaon, Ahilyanagar, Maharashtra, India",
-    "officeLabel": "Sanjivani Edge — Noida office",
-    "officeAddress": "3rd Floor, Akasa Co-Working, Office No. 10, Trapezoid IT Park, C-27, Sector 62, Noida 201309",
     "phone": "+91 02423 224120 / 224121 / 224122",
     "email": "contactus@sanjivanigroup.org.in",
     "businessesTitle": "BUSINESSES",
@@ -416,6 +457,8 @@
     },
     "business": {
       "sugar": "Sugar & allied",
+      "spirits": "Spirits",
+      "dairy": "Dairy",
       "energy": "Green energy",
       "agri": "Agri-inputs",
       "fisheries": "Fisheries",
@@ -427,7 +470,7 @@
   },
   "meta": {
     "title": "Sanjivani Group — Six decades of growing Maharashtra",
-    "description": "Founded in 1960 as a cooperative sugar mill at Kopargaon, the Sanjivani Group today spans sugar, green energy, agri-inputs, fisheries, pharmaceuticals, education, rural development and information technology.",
+    "description": "Founded in 1960 as a cooperative sugar mill at Kopargaon, the Sanjivani Group today spans sugar, spirits, dairy, green energy, agri-inputs, fisheries, pharmaceuticals, education, rural development and information technology.",
     "ogAlt": "Sanjivani Group, Kopargaon"
   }
 }

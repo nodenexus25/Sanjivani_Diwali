@@ -37,6 +37,38 @@
     scrollbar-width: none;
   }
 
+  /* Mega-menu: a slim scrollbar that only shows while the panel is hovered, so
+     a long business list scrolls inside the panel instead of the page. */
+  .mega-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+  .mega-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .mega-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .mega-scroll::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: var(--radius-pill);
+  }
+
+  .mega-scroll:hover {
+    scrollbar-color: var(--sand-300) transparent;
+  }
+
+  .mega-scroll:hover::-webkit-scrollbar-thumb {
+    background: var(--sand-300);
+  }
+
+  .mega-scroll:hover::-webkit-scrollbar-thumb:hover {
+    background: var(--brown-300);
+  }
+
   .tabular {
     font-variant-numeric: tabular-nums;
   }

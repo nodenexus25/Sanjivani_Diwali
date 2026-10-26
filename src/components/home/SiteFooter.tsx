@@ -68,12 +68,11 @@ export function SiteFooter() {
               </div>
 
               <address className="mt-6 text-[15px] not-italic leading-relaxed">
-                <p>{t('footer.address')}</p>
-                <p className="mt-4">
+                <p>
                   <span className="block text-[12px] font-bold uppercase tracking-[0.2em] text-brown-300">
-                    {t('footer.officeLabel')}
+                    {t('footer.registeredLabel')}
                   </span>
-                  {t('footer.officeAddress')}
+                  {t('footer.address')}
                 </p>
                 <p className="mt-4">
                   <a href={GROUP_PHONE_HREF} className={CONTACT_LINK}>

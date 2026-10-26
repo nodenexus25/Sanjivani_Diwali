@@ -15,6 +15,8 @@ import heroEducation from '@/assets/images/hero-education.webp';
 import heroLegacy from '@/assets/images/hero-legacy.webp';
 import founderShankarrao from '@/assets/images/founder-shankarrao.webp';
 import bizSugar from '@/assets/images/biz-sugar.webp';
+import bizSpirits from '@/assets/images/biz-spirits.webp';
+import bizDairy from '@/assets/images/biz-dairy.webp';
 import bizEnergy from '@/assets/images/biz-energy.webp';
 import bizAgri from '@/assets/images/biz-agri.webp';
 import bizPharma from '@/assets/images/biz-pharma.webp';
@@ -104,12 +106,36 @@ export const founder = {
 export const businesses: Business[] = [
   {
     id: 'sugar',
-    href: '#businesses',
+    href: 'https://www.amrutsugar.in/',
+    external: true,
     media: { type: 'image', src: bizSugar, labelKey: 'businesses.sugar.mediaLabel' },
     details: [
       {
         id: 'allied',
-        items: [{ id: 'dairy' }, { id: 'jaggery' }],
+        items: [{ id: 'jaggery' }],
+      },
+    ],
+  },
+  {
+    id: 'spirits',
+    href: 'https://www.sanjivanispirits.com/',
+    external: true,
+    media: { type: 'image', src: bizSpirits, labelKey: 'businesses.spirits.mediaLabel' },
+    details: [
+      {
+        id: 'operations',
+        items: [{ id: 'distillery' }, { id: 'portfolio' }],
+      },
+    ],
+  },
+  {
+    id: 'dairy',
+    href: '#businesses',
+    media: { type: 'image', src: bizDairy, labelKey: 'businesses.dairy.mediaLabel' },
+    details: [
+      {
+        id: 'operations',
+        items: [{ id: 'plant' }, { id: 'products' }, { id: 'members' }],
       },
     ],
   },
@@ -161,7 +187,8 @@ export const businesses: Business[] = [
   },
   {
     id: 'pharma',
-    href: '#businesses',
+    href: 'https://www.sanjivanipharma.com/',
+    external: true,
     media: { type: 'image', src: bizPharma, labelKey: 'businesses.pharma.mediaLabel' },
     details: [
       {
@@ -169,17 +196,17 @@ export const businesses: Business[] = [
         items: [
           {
             id: 'sanitizer',
-            href: 'https://sanjivanipharma.vercel.app/products/hand-sanitizer',
+            href: 'https://www.sanjivanipharma.com/',
             external: true,
           },
           {
             id: 'paracetamol',
-            href: 'https://sanjivanipharma.vercel.app/products/paracetamol',
+            href: 'https://www.sanjivanipharma.com/',
             external: true,
           },
           {
             id: 'institutional',
-            href: 'https://sanjivanipharma.vercel.app/contact',
+            href: 'https://www.sanjivanipharma.com/',
             external: true,
           },
         ],
