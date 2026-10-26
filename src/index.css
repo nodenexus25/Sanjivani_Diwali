@@ -48,25 +48,6 @@
   }
 }
 
-/* Ambient Deepavali particles (disabled under reduced motion). */
-@keyframes rise {
-  0% {
-    transform: translateY(0) scale(1);
-    opacity: 0;
-  }
-  12% {
-    opacity: 0.55;
-  }
-  100% {
-    transform: translateY(-260px) scale(0.6);
-    opacity: 0;
-  }
-}
-
-.particle {
-  animation: rise 12s linear infinite;
-}
-
 /* Full-bleed hero media drift. The peak scale is kept low so the compositor
    magnifies the layer texture as little as possible — a larger zoom on a
    viewport-wide photograph reads as softness rather than motion. */
@@ -98,11 +79,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .particle {
-    animation: none;
-    opacity: 0.2;
-  }
-
   .ken-burns,
   .scroll-cue {
     animation: none;

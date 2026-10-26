@@ -22,11 +22,6 @@
     "switchTo": "Switch to {{language}}",
     "goToSlide": "Go to slide {{number}}: {{title}}"
   },
-  "festiveStrip": {
-    "message": "✦ Shubh Deepavali from the Sanjivani family — wishing our farmers, students and partners a year of light and growth.",
-    "link": "Read our message",
-    "dismiss": "Dismiss festive message"
-  },
   "nav": {
     "aria": "Primary",
     "about": "About us",
@@ -60,14 +55,6 @@
     "scroll": "Scroll",
     "mediaLabel": "Hero media",
     "slides": {
-      "deepavali": {
-        "eyebrow": "Shubh Deepavali",
-        "title": "May every lamp light a field, a classroom, a home.",
-        "body": "From all of us at the Sanjivani Group — warm wishes to our farmer members, students, partners and their families this festival of lights.",
-        "cta": "Our festive message",
-        "tab": "Deepavali",
-        "mediaLabel": "Diyas at dusk on the Kopargaon campus"
-      },
       "greenEnergy": {
         "eyebrow": "Green energy",
         "title": "India's first cooperative compressed biogas plant.",
@@ -87,7 +74,7 @@
       "legacy": {
         "eyebrow": "Since 1960",
         "title": "Built by farmers. Growing for six decades.",
-        "body": "Founded as a cooperative sugar mill by Late Shri Shankarrao Kolhe, the group now spans sugar, energy, agri-inputs, pharma, education and IT.",
+        "body": "Founded as a cooperative sugar mill by Late Shri Shankarrao Kolhe, the group now spans sugar, energy, agri-inputs, fisheries, pharma, education and IT.",
         "cta": "Explore our businesses",
         "tab": "Our legacy",
         "mediaLabel": "Sugarcane fields at golden hour"
@@ -114,47 +101,220 @@
     "title": "One root. Many ways we serve rural India.",
     "viewAll": "View all companies",
     "explore": "Explore",
+    "moreDetails": "More details",
+    "website": "Website",
     "sugar": {
       "tag": "SUGAR & ALLIED",
       "title": "Sahakar Maharshi Shankarrao Kolhe SSK",
       "desc": "Our cooperative sugar mill since 1960 — the heart of the group and of the cane economy around Kopargaon.",
-      "mediaLabel": "Sugar factory and cane yard at Kopargaon"
+      "mediaLabel": "Historic sugar factory view at Kopargaon",
+      "details": {
+        "allied": {
+          "title": "Allied businesses",
+          "items": {
+            "dairy": {
+              "title": "Sanjivani dairy plant",
+              "body": "Milk and dairy products within the group's rural consumer portfolio."
+            },
+            "jaggery": {
+              "title": "Jaggery industry",
+              "body": "Traditional jaggery blocks, powder and cubes under the Amrut range."
+            }
+          }
+        }
+      }
     },
     "energy": {
       "tag": "GREEN ENERGY",
       "title": "Ethanol, co-generation & biogas",
       "desc": "Fuel ethanol, renewable power for the grid and compressed biogas from the by-products of every crushing season.",
-      "mediaLabel": "Distillery and co-generation units"
+      "mediaLabel": "Ethanol and co-generation operations at the factory campus",
+      "details": {
+        "operations": {
+          "title": "Operations",
+          "items": {
+            "ethanol": {
+              "title": "Ethanol division",
+              "body": "Fuel-grade and pharma-grade ethanol linked to the group's integrated process."
+            },
+            "cogen": {
+              "title": "Co-generation plant",
+              "body": "Renewable steam and grid power integrated with the factory campus."
+            },
+            "biogas": {
+              "title": "Biogas operations",
+              "body": "Compressed biogas from crushing-season by-products and process residue."
+            }
+          }
+        }
+      }
     },
     "agri": {
       "tag": "AGRI-INPUTS",
       "title": "Bio-compost & potash granules",
       "desc": "Returning nutrients to the soil — bio-compost and spray-dried potash granules made from our own process streams.",
-      "mediaLabel": "Bio-compost and potash granule bags"
+      "mediaLabel": "Bio-compost and potash granule bags",
+      "details": {
+        "products": {
+          "title": "Product lines",
+          "items": {
+            "compost": {
+              "title": "Bio-compost",
+              "body": "Organic nutrient return from integrated process streams."
+            },
+            "potash": {
+              "title": "Potash granules",
+              "body": "Spray-dried potash granules designed for soil replenishment."
+            },
+            "soil": {
+              "title": "Soil enrichment",
+              "body": "Circular agri-inputs that send value back to member farmers' fields."
+            }
+          }
+        }
+      }
+    },
+    "fisheries": {
+      "tag": "FISHERIES",
+      "title": "Sanjivani Fisheries",
+      "desc": "Sanjivani Matsya Vikas Co-operative Society — a fish farmer producer organisation at Kopargaon since 1996, working from hatchery seed to market.",
+      "mediaLabel": "Sanjivani Fisheries co-operative society emblem",
+      "details": {
+        "services": {
+          "title": "Services",
+          "items": {
+            "hatchery": {
+              "title": "Carp hatchery",
+              "body": "Quality seed of Rohu, Katla, Mrigal and other carp species for member ponds."
+            },
+            "biofloc": {
+              "title": "Biofloc systems",
+              "body": "High-density tank farming with minimal water exchange."
+            },
+            "feed": {
+              "title": "Feed plant",
+              "body": "Extruded floating feed, nutritionally balanced for farm-grown fish."
+            },
+            "community": {
+              "title": "Farmer community",
+              "body": "Technical guidance and market linkages for member farmers across Maharashtra."
+            }
+          }
+        }
+      }
     },
     "pharma": {
       "tag": "PHARMACEUTICALS",
       "title": "Sanjivani pharma formulations",
       "desc": "Quality formulations built on the group's pharmacy education and research strength.",
-      "mediaLabel": "Pharmaceutical formulations facility"
+      "mediaLabel": "Pharmaceutical formulations facility",
+      "details": {
+        "portfolio": {
+          "title": "Product focus",
+          "items": {
+            "sanitizer": {
+              "title": "Sanjivani hand sanitizer",
+              "body": "Ethanol-based disinfectant for institutional, trade and daily hygiene use."
+            },
+            "paracetamol": {
+              "title": "Paracetamol",
+              "body": "Core pharma product line presented for institutional and trade discussions."
+            },
+            "institutional": {
+              "title": "Bulk & institutional supply",
+              "body": "Procurement support for hospitals, clinics, distributors and stockists."
+            }
+          }
+        }
+      }
     },
     "education": {
       "tag": "EDUCATION",
-      "title": "Sanjivani University & Institutes",
-      "desc": "Sanjivani Rural Education Society — institutes and a university serving students from across India.",
-      "mediaLabel": "Sanjivani University campus"
+      "title": "Schools, University & Institutes",
+      "desc": "From Kharghar schools to Kopargaon's institutes and university under the Sanjivani education network.",
+      "mediaLabel": "Sanjivani International School building at Kharghar",
+      "details": {
+        "featuredSchools": {
+          "title": "Schools",
+          "items": {
+            "sisKharghar": {
+              "title": "Sanjivani International School, Kharghar",
+              "body": "ICSE/ISC campus focused on enrichment, enhancement and excellence."
+            },
+            "englishMedium": {
+              "title": "Sanjivani English Medium School",
+              "body": "English-medium schooling in Kopargaon under the Sanjivani education family."
+            }
+          }
+        },
+        "schoolNetwork": {
+          "title": "School network",
+          "items": {
+            "sisShirdi": {
+              "title": "Sanjivani International School, Shirdi",
+              "body": "Holistic school campus at Shirdi."
+            },
+            "academyKopargaon": {
+              "title": "Sanjivani Academy, Kopargaon",
+              "body": "CBSE campus with activity-based learning, labs and sports."
+            },
+            "academyVaijapur": {
+              "title": "Sanjivani Academy, Vaijapur",
+              "body": "CBSE secondary school focused on academics, sports and arts."
+            }
+          }
+        }
+      }
     },
     "rural": {
       "tag": "RURAL DEVELOPMENT",
       "title": "Credit societies & women's SHGs",
       "desc": "Strengthening primary credit societies and self-help groups so that rural capital stays in rural hands.",
-      "mediaLabel": "Women's self-help group meeting"
+      "mediaLabel": "Women's self-help group meeting",
+      "details": {
+        "initiatives": {
+          "title": "Community initiatives",
+          "items": {
+            "credit": {
+              "title": "Primary credit societies",
+              "body": "Local financial institutions built around rural trust and access."
+            },
+            "shg": {
+              "title": "Women's self-help groups",
+              "body": "Grassroots enterprise and savings collectives across the community."
+            },
+            "community": {
+              "title": "Community finance support",
+              "body": "Keeping capital and opportunity circulating within rural families."
+            }
+          }
+        }
+      }
     },
     "it": {
       "tag": "IT & CONSULTING",
       "title": "Sanjivani Edge — IT, ERP & digital transformation",
       "desc": "The group's IT services and consulting business — ERP, cloud, cybersecurity and software engineering for manufacturing, BFSI and healthcare enterprises.",
-      "mediaLabel": "IT infrastructure and network operations centre"
+      "mediaLabel": "IT infrastructure and network operations centre",
+      "details": {
+        "services": {
+          "title": "Service lines",
+          "items": {
+            "erp": {
+              "title": "ERP implementation",
+              "body": "Business systems for manufacturing and enterprise operations."
+            },
+            "cloud": {
+              "title": "Cloud & cybersecurity",
+              "body": "Infrastructure modernisation, security hardening and managed operations."
+            },
+            "engineering": {
+              "title": "Software engineering",
+              "body": "Custom digital products for manufacturing, BFSI and healthcare teams."
+            }
+          }
+        }
+      }
     }
   },
   "milestone": {
@@ -179,18 +339,9 @@
     "y1960": "Cooperative sugar mill founded by Shri Shankarrao Kolhe at Shingnapur, Kopargaon.",
     "y1982": "Sanjivani K.B.P. Polytechnic opens its doors to rural students.",
     "y1983": "Sanjivani Rural Education Society and College of Engineering founded.",
+    "fisheries": "Sanjivani Matsya Vikas Co-operative Society founded for fish farmers at Kopargaon.",
     "university": "Sanjivani University established, extending the education legacy.",
     "y2025": "India's first cooperative multi-feed CBG and potash plant inaugurated."
-  },
-  "deepavali": {
-    "greeting": "शुभ दीपावली",
-    "message": "This festival of lights, we give thanks to the farmers who grow with us, the students who learn with us and the families who have trusted Sanjivani for sixty-six years.",
-    "signoff": "— The Kolhe family and everyone at the Sanjivani Group",
-    "cta": "Watch our Deepavali film",
-    "ecard": "Send a Deepavali e-card",
-    "ecardAria": "Deepavali greeting card preview",
-    "ecardTitle": "Shubh Deepavali",
-    "ecardFrom": "With warm wishes, the Sanjivani Group"
   },
   "news": {
     "eyebrow": "Newsroom",
@@ -228,11 +379,6 @@
       "title": "Study at Sanjivani University",
       "text": "Engineering, pharmacy, management, sciences and more — from school to doctorate."
     }
-  },
-  "video": {
-    "title": "Our Deepavali film",
-    "aria": "Deepavali film",
-    "unavailable": "Our Deepavali film will play here soon."
   },
   "footer": {
     "contactTitle": "Contact",
@@ -272,6 +418,7 @@
       "sugar": "Sugar & allied",
       "energy": "Green energy",
       "agri": "Agri-inputs",
+      "fisheries": "Fisheries",
       "pharma": "Pharmaceuticals",
       "education": "Education",
       "rural": "Rural finance",
@@ -280,9 +427,7 @@
   },
   "meta": {
     "title": "Sanjivani Group — Six decades of growing Maharashtra",
-    "festiveTitle": "Sanjivani Group — Shubh Deepavali",
-    "description": "Founded in 1960 as a cooperative sugar mill at Kopargaon, the Sanjivani Group today spans sugar, green energy, agri-inputs, pharmaceuticals, education, rural development and information technology.",
-    "ogAlt": "Sanjivani Group, Kopargaon",
-    "ogFestiveAlt": "Shubh Deepavali from the Sanjivani Group"
+    "description": "Founded in 1960 as a cooperative sugar mill at Kopargaon, the Sanjivani Group today spans sugar, green energy, agri-inputs, fisheries, pharmaceuticals, education, rural development and information technology.",
+    "ogAlt": "Sanjivani Group, Kopargaon"
   }
 }

@@ -47,8 +47,6 @@ const config: Config = {
         ivory: token('ivory'),
         paper: token('paper'),
         sand: { 200: token('sand-200'), 300: token('sand-300') },
-        marigold: token('marigold'),
-        diya: { flame: token('diya-flame'), bowl: token('diya-bowl'), sand: token('diwali-sand') },
         accent: { light: token('accent-on-light'), dark: token('accent-on-dark') },
         line: { light: token('border-light'), dark: token('border-dark') },
       },
@@ -82,10 +80,9 @@ const config: Config = {
       /* Alpha steps the design uses that are not on Tailwind's default scale. */
       opacity: { 3: '0.03', 6: '0.06', 8: '0.08', 12: '0.12', 14: '0.14', 16: '0.16', 18: '0.18', 22: '0.22', 26: '0.26', 35: '0.35', 45: '0.45', 55: '0.55', 65: '0.65', 85: '0.85' },
       keyframes: {
-        flicker: { '0%,100%': { transform: 'scaleY(1)', opacity: '1' }, '50%': { transform: 'scaleY(1.08)', opacity: '.85' } },
         progress: { from: { width: '0%' }, to: { width: '100%' } },
       },
-      animation: { flicker: 'flicker 1.6s ease-in-out infinite', progress: 'progress 7s linear forwards' },
+      animation: { progress: 'progress 7s linear forwards' },
     },
   },
   plugins: [],

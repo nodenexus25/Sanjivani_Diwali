@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { KeyboardEvent } from 'react';
-import { Menu } from 'lucide-react';
+import { ChevronDown, Menu } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
 import { Logo } from '@/components/ui/Logo';
@@ -23,9 +23,7 @@ const LANGUAGES = [
  * Two-state header sitting on top of the full-screen hero.
  *
  * State A (scrollY < 80) is transparent with the reverse logo; State B is the
- * paper bar with the full-colour logo. The festive strip publishes its height as
- * `--festive-strip-height`, so the header drops below it and rises when it is
- * dismissed.
+ * paper bar with the full-colour logo.
  */
 export function SiteHeader() {
   const { t, i18n } = useTranslation();
@@ -150,11 +148,9 @@ export function SiteHeader() {
   return (
     <header
       className={cx(
-        'fixed inset-x-0 z-50 transition-colors duration-fast ease-brand',
+        'fixed inset-x-0 top-0 z-50 transition-colors duration-fast ease-brand',
         scrolled ? 'bg-paper shadow-header' : 'border-b border-ivory/16 bg-transparent'
       )}
-      // The festive strip, when present, publishes its own height.
-      style={{ top: 'var(--festive-strip-height, 0px)' }}
       // Leaving the header (which contains the panel) dismisses the hover menu.
       onPointerLeave={closeMega}
     >
@@ -202,11 +198,19 @@ export function SiteHeader() {
                       onClick={handleTriggerClick}
                       onKeyDown={handleTriggerKeyDown}
                       className={cx(
-                        'relative inline-flex min-h-[44px] items-center px-1 text-nav font-medium transition-colors duration-fast ease-brand',
+                        'relative inline-flex min-h-[44px] items-center gap-1.5 px-1 text-nav font-medium transition-colors duration-fast ease-brand',
                         navLinkTone
                       )}
                     >
                       {t('nav.businesses')}
+                      {/* Marks the item as a dropdown; `aria-expanded` carries the state. */}
+                      <ChevronDown
+                        aria-hidden="true"
+                        className={cx(
+                          'h-4 w-4 shrink-0 transition-transform duration-fast ease-brand',
+                          megaOpen && 'rotate-180'
+                        )}
+                      />
                       <span
                         aria-hidden="true"
                         className={cx(

@@ -24,8 +24,6 @@ export interface MediaAsset {
 export interface HeroSlide {
   /** Also the i18n namespace: hero.slides.<id>.* */
   id: string;
-  /** When true the slide only renders while the festive layer is on. */
-  festiveOnly?: boolean;
   ctaHref: string;
   secondaryHref: string;
   media: MediaAsset;
@@ -39,6 +37,19 @@ export interface Business {
   /** True when `href` leaves the group site (opens in a new tab). */
   external?: boolean;
   media: MediaAsset;
+  details?: BusinessDetailSection[];
+}
+
+export interface BusinessDetailSection {
+  id: string;
+  divider?: boolean;
+  items: BusinessDetailItem[];
+}
+
+export interface BusinessDetailItem {
+  id: string;
+  href?: string;
+  external?: boolean;
 }
 
 export interface Person {

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { FocusEvent, KeyboardEvent, ReactNode } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import type { MotionProps } from 'framer-motion';
@@ -6,10 +6,8 @@ import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
-import { DiyaIcon } from '@/components/ui/DiyaIcon';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { useCarousel } from '@/hooks/useCarousel';
-import { useFestive } from '@/hooks/useFestive';
 import { heroSlides } from '@/content/home';
 import type { HeroSlide } from '@/content/types';
 import { cx } from '@/lib/cx';
@@ -155,16 +153,12 @@ function SlideMedia({ slide, priority, videosEnabled }: SlideMediaProps) {
 
 export function HeroCarousel() {
   const { t } = useTranslation();
-  const festive = useFestive();
   const reduceMotion = useReducedMotion() ?? false;
   // The prerender pass has no viewport and never runs effects, so the staggered
   // entrance has to be skipped or the hero would ship as invisible markup.
   const canAnimate = !reduceMotion && typeof window !== 'undefined';
 
-  const slides = useMemo(
-    () => heroSlides.filter((slide) => !slide.festiveOnly || festive),
-    [festive]
-  );
+  const slides = heroSlides;
   const count = slides.length;
 
   const { index, next, prev, goTo, progress, setPaused } = useCarousel({
@@ -180,11 +174,6 @@ export function HeroCarousel() {
   useEffect(() => {
     setPaused(userPaused || hoverPaused);
   }, [userPaused, hoverPaused, setPaused]);
-
-  // The festive toggle changes the slide list — restart cleanly on the first one.
-  useEffect(() => {
-    goTo(0);
-  }, [count, goTo]);
 
   // Videos are held back until the page is idle, and skipped entirely on
   // `saveData` connections or under reduced motion.
@@ -357,14 +346,6 @@ export function HeroCarousel() {
                   exit={canAnimate ? { opacity: 0 } : undefined}
                   transition={{ duration: 0.35, ease: EASE_EDITORIAL }}
                 >
-                  {active.id === 'deepavali' ? (
-                    <div aria-hidden="true" className="flex items-center gap-3">
-                      {[0, 1, 2].map((order) => (
-                        <DiyaIcon key={order} size={30} flicker delay={order * 0.2} />
-                      ))}
-                    </div>
-                  ) : null}
-
                   <motion.div {...slideStagger(0)}>
                     <Eyebrow tone="dark" withRule>
                       {t(`hero.slides.${active.id}.eyebrow`)}

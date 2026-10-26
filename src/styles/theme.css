@@ -3,7 +3,7 @@
 
 :root {
   /* Brand core */
-  --brown-950: #1E0802;   /* footer, stats band, Deepavali band */
+  --brown-950: #1E0802;   /* footer */
   --brown-900: #2F0E05;   /* SANJIVANI BROWN — text on light, main dark surface */
   --brown-800: #43190D;   /* cards and raised panels on dark */
   --brown-700: #5E4036;   /* secondary text on light (8.6:1 on ivory) */
@@ -22,12 +22,6 @@
   --paper:    #FFFFFF;    /* alternate ground, header */
   --sand-200: #EDE3D9;    /* placeholders, soft fills */
   --sand-300: #E1D4C6;    /* hairlines on light */
-
-  /* Festive — only while festive mode is on */
-  --marigold:   #E3A33B;
-  --diya-flame: #F4BE52;
-  --diya-bowl:  #C4691B;
-  --diwali-sand: #E5CFA8;
 
   /* Semantic aliases */
   --bg-page:            var(--ivory);
@@ -80,7 +74,7 @@
   --dur-base:  600ms;
   --dur-slow:  700ms;
 
-  /* Header bar height (festive strip stacks above it). */
+  /* Header bar height. */
   --header-height: 84px;
 }
 
@@ -156,15 +150,7 @@ a  { color: var(--accent-on-light); }
 .on-dark .btn-primary   { background: var(--green-500); color: var(--brown-900); }
 .on-dark .btn-primary:hover { background: var(--green-300); }
 .on-dark .btn-secondary { color: var(--ivory); border-color: rgba(250,246,239,.4); }
-.btn-festive            { background: var(--marigold); color: var(--brown-900); }
 .btn-sm                 { height: 44px; padding: 0 22px; font-size: 14px; }
-
-/* Festive motif */
-@keyframes diya-flicker {
-  0%, 100% { transform: scaleY(1);    opacity: 1; }
-  50%      { transform: scaleY(1.08); opacity: .85; }
-}
-.diya-flame { transform-origin: 50% 100%; animation: diya-flicker 1.6s ease-in-out infinite; }
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {

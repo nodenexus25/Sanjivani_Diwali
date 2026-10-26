@@ -10,7 +10,6 @@ import type {
   SearchSuggestion,
   TimelineEntry,
 } from './types';
-import heroDeepavali from '@/assets/images/hero-deepavali.webp';
 import heroGreenEnergy from '@/assets/images/hero-green-energy.webp';
 import heroEducation from '@/assets/images/hero-education.webp';
 import heroLegacy from '@/assets/images/hero-legacy.webp';
@@ -21,6 +20,7 @@ import bizAgri from '@/assets/images/biz-agri.webp';
 import bizPharma from '@/assets/images/biz-pharma.webp';
 import bizEducation from '@/assets/images/biz-education.webp';
 import bizRural from '@/assets/images/biz-rural.webp';
+import bizFisheries from '@/assets/images/biz-fisheries.webp';
 import bizIt from '@/assets/images/biz-it.webp';
 import milestoneCbg from '@/assets/images/milestone-cbg.webp';
 import newsCbg from '@/assets/images/news-cbg.webp';
@@ -49,24 +49,12 @@ export const navigation = [
 ] as const;
 
 /**
- * Hero slides, fed by the four client-supplied photographs (1672×941, 16:9).
+ * Hero slides, fed by the client-supplied photographs (1672×941, 16:9).
  * `objectPosition` keeps the busiest part of each frame inside the visible crop,
  * so the values follow each photo's measured detail centroid (54–62%) rather than
  * the earlier hard right-edge bias, which cropped the subject off on wide screens.
  */
 export const heroSlides: HeroSlide[] = [
-  {
-    id: 'deepavali',
-    festiveOnly: true,
-    ctaHref: '#deepavali',
-    secondaryHref: '#about',
-    objectPosition: '54% center',
-    media: {
-      type: 'image',
-      src: heroDeepavali,
-      labelKey: 'hero.slides.deepavali.mediaLabel',
-    },
-  },
   {
     id: 'greenEnergy',
     ctaHref: '#sustainability',
@@ -118,37 +106,147 @@ export const businesses: Business[] = [
     id: 'sugar',
     href: '#businesses',
     media: { type: 'image', src: bizSugar, labelKey: 'businesses.sugar.mediaLabel' },
+    details: [
+      {
+        id: 'allied',
+        items: [{ id: 'dairy' }, { id: 'jaggery' }],
+      },
+    ],
   },
   {
     id: 'energy',
     href: '#sustainability',
     media: { type: 'image', src: bizEnergy, labelKey: 'businesses.energy.mediaLabel' },
+    details: [
+      {
+        id: 'operations',
+        items: [
+          {
+            id: 'ethanol',
+            href: 'https://chemicals-website-psi.vercel.app/products/ethanol',
+            external: true,
+          },
+          {
+            id: 'cogen',
+            href: 'https://chemicals-website-psi.vercel.app/plants/co-generation-division',
+            external: true,
+          },
+          { id: 'biogas' },
+        ],
+      },
+    ],
   },
   {
     id: 'agri',
     href: '#businesses',
     media: { type: 'image', src: bizAgri, labelKey: 'businesses.agri.mediaLabel' },
+    details: [
+      {
+        id: 'products',
+        items: [{ id: 'compost' }, { id: 'potash' }, { id: 'soil' }],
+      },
+    ],
+  },
+  {
+    id: 'fisheries',
+    href: 'https://sanjivani-fish.vercel.app/',
+    external: true,
+    media: { type: 'image', src: bizFisheries, labelKey: 'businesses.fisheries.mediaLabel' },
+    details: [
+      {
+        id: 'services',
+        items: [{ id: 'hatchery' }, { id: 'biofloc' }, { id: 'feed' }, { id: 'community' }],
+      },
+    ],
   },
   {
     id: 'pharma',
     href: '#businesses',
     media: { type: 'image', src: bizPharma, labelKey: 'businesses.pharma.mediaLabel' },
+    details: [
+      {
+        id: 'portfolio',
+        items: [
+          {
+            id: 'sanitizer',
+            href: 'https://sanjivanipharma.vercel.app/products/hand-sanitizer',
+            external: true,
+          },
+          {
+            id: 'paracetamol',
+            href: 'https://sanjivanipharma.vercel.app/products/paracetamol',
+            external: true,
+          },
+          {
+            id: 'institutional',
+            href: 'https://sanjivanipharma.vercel.app/contact',
+            external: true,
+          },
+        ],
+      },
+    ],
   },
   {
     id: 'education',
     href: '#education',
     media: { type: 'image', src: bizEducation, labelKey: 'businesses.education.mediaLabel' },
+    details: [
+      {
+        id: 'featuredSchools',
+        items: [
+          {
+            id: 'sisKharghar',
+            href: 'https://www.sanjivaniis.com/index.php',
+            external: true,
+          },
+          { id: 'englishMedium' },
+        ],
+      },
+      {
+        id: 'schoolNetwork',
+        divider: true,
+        items: [
+          {
+            id: 'sisShirdi',
+            href: 'https://sanjivaniinternational.org.in/',
+            external: true,
+          },
+          {
+            id: 'academyKopargaon',
+            href: 'https://sanjivaniacademy.org.in/',
+            external: true,
+          },
+          {
+            id: 'academyVaijapur',
+            href: 'https://www.sanjivaniacademy.com/',
+            external: true,
+          },
+        ],
+      },
+    ],
   },
   {
     id: 'rural',
     href: '#businesses',
     media: { type: 'image', src: bizRural, labelKey: 'businesses.rural.mediaLabel' },
+    details: [
+      {
+        id: 'initiatives',
+        items: [{ id: 'credit' }, { id: 'shg' }, { id: 'community' }],
+      },
+    ],
   },
   {
     id: 'it',
     href: 'https://www.sanjivaniedge.com',
     external: true,
     media: { type: 'image', src: bizIt, labelKey: 'businesses.it.mediaLabel' },
+    details: [
+      {
+        id: 'services',
+        items: [{ id: 'erp' }, { id: 'cloud' }, { id: 'engineering' }],
+      },
+    ],
   },
 ];
 
@@ -172,6 +270,7 @@ export const timeline: TimelineEntry[] = [
   { id: 'y1960', year: '1960' },
   { id: 'y1982', year: '1982' },
   { id: 'y1983', year: '1983' },
+  { id: 'fisheries', year: '1996' },
   { id: 'university', year: '2024' },
   { id: 'y2025', year: '2025' },
 ];
