@@ -27,7 +27,6 @@
     "about": "About us",
     "businesses": "Businesses",
     "sustainability": "Sustainability",
-    "education": "Education",
     "news": "Newsroom",
     "careers": "Careers"
   },
@@ -74,7 +73,7 @@
       "legacy": {
         "eyebrow": "Since 1960",
         "title": "Built by farmers. Growing for six decades.",
-        "body": "Founded as a cooperative sugar mill by Late Shri Shankarrao Kolhe, the group now spans sugar, spirits, dairy, energy, agri-inputs, fisheries, pharma, education and IT.",
+        "body": "Founded as a cooperative sugar mill by Late Shri Shankarraoji Kolhe Saheb, the group now spans sugar, spirits, dairy, energy, agri-inputs, fisheries, pharma, education and IT.",
         "cta": "Explore our businesses",
         "tab": "Our legacy",
         "mediaLabel": "Tree of initiatives at sunset"
@@ -86,7 +85,7 @@
     "title": "A cooperative idea that grew into an institution.",
     "p1": "In 1960, Sahakar Maharshi Shankarrao Genuji Kolhe (1929–2022), former Minister of Maharashtra, brought the farmers of Kopargaon together to build their own sugar mill. What began as a cooperative of cane growers became an integrated rural enterprise — in sugar, green energy, agri-inputs, pharmaceuticals and education.",
     "p2": "In 1983 he founded the Sanjivani Rural Education Society, so that the children of farmers and workers could become engineers, pharmacists and leaders without leaving rural Maharashtra.",
-    "portraitLabel": "Sepia-toned portrait of Late Shri Shankarrao G. Kolhe",
+    "portraitLabel": "Sepia-toned portrait of Late Shri Shankarraoji Kolhe Saheb",
     "leadershipTitle": "Leadership",
     "link": "Our legacy and leadership"
   },
@@ -378,7 +377,7 @@
   "timeline": {
     "eyebrow": "Six decades of firsts",
     "title": "From one mill to a movement.",
-    "y1960": "Cooperative sugar mill founded by Shri Shankarrao Kolhe at Shingnapur, Kopargaon.",
+    "y1960": "Cooperative sugar mill founded by Late Shri Shankarraoji Kolhe Saheb at Shingnapur, Kopargaon.",
     "y1982": "Sanjivani K.B.P. Polytechnic opens its doors to rural students.",
     "y1983": "Sanjivani Rural Education Society and College of Engineering founded.",
     "fisheries": "Sanjivani Matsya Vikas Co-operative Society founded for fish farmers at Kopargaon.",
@@ -421,14 +420,14 @@
     },
     "admissions": {
       "eyebrow": "ADMISSIONS 2027–28",
-      "title": "Study at Sanjivani University",
+      "title": "Study at Sanjivani Schools & University",
       "text": "Engineering, pharmacy, management, sciences and more — from school to doctorate."
     }
   },
   "footer": {
     "contactTitle": "Contact",
-    "registeredLabel": "Registered office",
-    "address": "Sahajanand Nagar, Shingnapur, Kopargaon, Ahilyanagar, Maharashtra, India",
+    "registeredLabel": "Registered address",
+    "address": "Sahajanandnagar, Post - Shingnapur, Tal - Kopargaon, Dist - Ahilyanagar 423603 (MS)",
     "phone": "+91 02423 224120 / 224121 / 224122",
     "email": "contactus@sanjivanigroup.org.in",
     "businessesTitle": "BUSINESSES",

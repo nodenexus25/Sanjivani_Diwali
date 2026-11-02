@@ -45,7 +45,6 @@ export const navigation = [
   { id: 'about', href: '#about' },
   { id: 'businesses', href: '#businesses' },
   { id: 'sustainability', href: '#sustainability' },
-  { id: 'education', href: '#education' },
   { id: 'news', href: '#news' },
   { id: 'careers', href: '#careers' },
 ] as const;
@@ -329,9 +328,9 @@ export const newsroom: NewsItem[] = [
 ];
 
 export const pathways: Pathway[] = [
-  { id: 'careers', href: '#careers', tone: 'dark' },
+  { id: 'careers', href: '#contact', tone: 'dark' },
   { id: 'partner', href: '#contact', tone: 'light' },
-  { id: 'admissions', href: '#contact', tone: 'light', external: true },
+  { id: 'admissions', href: '#contact', tone: 'light' },
 ];
 
 export const footerBusinessLinks: FooterLink[] = businesses.map((business) => ({
