@@ -23,6 +23,8 @@ const BUSINESSES_PANEL_ID = 'drawer-businesses';
 export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
   const { t, i18n } = useTranslation();
   const [businessesOpen, setBusinessesOpen] = useState(false);
+  const getMenuHref = (businessId: string, href: string) =>
+    businessId === 'education' ? '#business-education' : href;
 
   useEffect(() => {
     if (!open) return;
@@ -144,7 +146,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
                                 {businesses.map((business) => (
                                   <li key={business.id}>
                                     <a
-                                      href={business.href}
+                                      href={getMenuHref(business.id, business.href)}
                                       {...(business.external
                                         ? { target: '_blank', rel: 'noopener noreferrer' }
                                         : {})}

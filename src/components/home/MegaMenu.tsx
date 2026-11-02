@@ -16,6 +16,8 @@ const ARROW_KEYS = ['ArrowDown', 'ArrowUp', 'ArrowLeft', 'ArrowRight'];
 export function MegaMenu({ open, onClose, id }: MegaMenuProps) {
   const { t } = useTranslation();
   const megaMenuBusinesses = [...businesses];
+  const getMenuHref = (businessId: string, href: string) =>
+    businessId === 'education' ? '#business-education' : href;
   const energyIndex = megaMenuBusinesses.findIndex((business) => business.id === 'energy');
   const itIndex = megaMenuBusinesses.findIndex((business) => business.id === 'it');
 
@@ -63,7 +65,7 @@ export function MegaMenu({ open, onClose, id }: MegaMenuProps) {
               {megaMenuBusinesses.map((business) => (
                 <li key={business.id}>
                   <a
-                    href={business.href}
+                    href={getMenuHref(business.id, business.href)}
                     {...(business.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                     data-menu-item
                     onClick={onClose}

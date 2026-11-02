@@ -14,7 +14,10 @@ function BusinessCard({ business }: { business: Business }) {
   const linkProps = business.external ? { target: '_blank', rel: 'noopener noreferrer' } : {};
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded bg-ivory ring-1 ring-transparent transition-shadow duration-300 ease-brand hover:ring-sand-300 focus-within:ring-2 focus-within:ring-green-700">
+    <article
+      id={`business-${id}`}
+      className="group flex h-full flex-col overflow-hidden rounded bg-ivory ring-1 ring-transparent transition-shadow duration-300 ease-brand hover:ring-sand-300 focus-within:ring-2 focus-within:ring-green-700"
+    >
       <a href={business.href} {...linkProps} className="block aspect-[16/10] shrink-0 overflow-hidden">
         <ResponsiveImage
           src={business.media.src}
