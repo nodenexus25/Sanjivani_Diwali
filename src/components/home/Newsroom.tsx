@@ -48,6 +48,10 @@ export function Newsroom() {
                 <h3 className="mt-2 font-display text-[23px] leading-snug text-brown-900 underline-offset-4 group-hover:underline">
                   {t(`news.${item.id}.title`)}
                 </h3>
+
+                <p className="mt-3 text-[16px] leading-relaxed text-brown-700">
+                  {t(`news.${item.id}.excerpt`)}
+                </p>
               </a>
             </Reveal>
           ))}

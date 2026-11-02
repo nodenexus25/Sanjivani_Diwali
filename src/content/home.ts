@@ -25,9 +25,9 @@ import bizRural from '@/assets/images/biz-rural.webp';
 import bizFisheries from '@/assets/images/biz-fisheries.webp';
 import bizIt from '@/assets/images/biz-it.webp';
 import milestoneCbg from '@/assets/images/milestone-cbg.webp';
-import newsCbg from '@/assets/images/news-cbg.webp';
-import newsUniversity from '@/assets/images/news-university.webp';
-import newsCrushing from '@/assets/images/news-crushing.webp';
+import newsWaterConservation from '@/assets/images/news-water-conservation.webp';
+import newsRakhiRath from '@/assets/images/news-rakhi-rath.webp';
+import newsHospitalOnWheels from '@/assets/images/news-hospital-on-wheels.webp';
 
 /**
  * Every value on the homepage. Components render this data plus the matching
@@ -304,19 +304,27 @@ export const timeline: TimelineEntry[] = [
 
 export const newsroom: NewsItem[] = [
   {
-    id: 'cbg',
+    id: 'waterConservation',
     href: '#news',
-    media: { type: 'image', src: newsCbg, labelKey: 'news.cbg.mediaLabel' },
+    media: {
+      type: 'image',
+      src: newsWaterConservation,
+      labelKey: 'news.waterConservation.mediaLabel',
+    },
   },
   {
-    id: 'university',
+    id: 'rakshaRath',
     href: '#news',
-    media: { type: 'image', src: newsUniversity, labelKey: 'news.university.mediaLabel' },
+    media: { type: 'image', src: newsRakhiRath, labelKey: 'news.rakshaRath.mediaLabel' },
   },
   {
-    id: 'crushing',
+    id: 'hospitalOnWheels',
     href: '#news',
-    media: { type: 'image', src: newsCrushing, labelKey: 'news.crushing.mediaLabel' },
+    media: {
+      type: 'image',
+      src: newsHospitalOnWheels,
+      labelKey: 'news.hospitalOnWheels.mediaLabel',
+    },
   },
 ];
 

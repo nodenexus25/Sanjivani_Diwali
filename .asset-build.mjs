@@ -12,7 +12,8 @@ import path from 'node:path';
 const SRC = 'A:/Group-Landing/.asset-staging';
 const OUT = 'A:/Group-Landing/src/assets/images';
 
-/** [source file, output name, max width, quality, crop?] */
+/** [source file, output name, max width, quality, crop?] — `crop` is either an
+ * extract region `{left, top, width, height}` or a "W:H" ratio to cover-crop. */
 const PLAN = [
   // hero — large, shown full-bleed
   ['school-turf-night.jpg', 'hero-deepavali.webp', 1600, 78],
@@ -34,10 +35,11 @@ const PLAN = [
   // feature block
   ['agri-home-2.png', 'milestone-cbg.webp', 1200, 76],
 
-  // newsroom thumbnails
-  ['amrut-banner-1.png', 'news-cbg.webp', 800, 76],
-  ['school-turf-ground.jpg', 'news-university.webp', 800, 76],
-  ['agri-timeline-1.png', 'news-crushing.webp', 800, 76],
+  // newsroom thumbnails — cover-cropped to the 16:10 card ratio so every card
+  // ships the exact same 800×500 frame.
+  ['water-conservation (2).jpeg', 'news-water-conservation.webp', 800, 80, '16:10'],
+  ['ek-rakhi.jpeg', 'news-rakhi-rath.webp', 800, 80, '16:10'],
+  ['hospital-on-wheels.jpeg', 'news-hospital-on-wheels.webp', 800, 80, '16:10'],
 
   // brand
   // The client's group logo is a centred lockup: emblem above, wordmark and
@@ -86,11 +88,22 @@ for (const [file, name, width, quality, crop] of PLAN) {
   const target = Math.min(width, sourceWidth);
 
   let pipeline = sharp(from);
-  if (crop) pipeline = pipeline.extract(crop);
-  await pipeline
-    .resize({ width: target, withoutEnlargement: true })
-    .webp({ quality, effort: 5 })
-    .toFile(to);
+  if (crop && typeof crop !== 'string') pipeline = pipeline.extract(crop);
+
+  const resize =
+    typeof crop === 'string'
+      ? (() => {
+          const [rw, rh] = crop.split(':').map(Number);
+          return {
+            width: target,
+            height: Math.round((target * rh) / rw),
+            fit: 'cover',
+            position: 'centre',
+          };
+        })()
+      : { width: target, withoutEnlargement: true };
+
+  await pipeline.resize(resize).webp({ quality, effort: 5 }).toFile(to);
 
   const before = (await stat(from)).size;
   const after = (await stat(to)).size;

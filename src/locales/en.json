@@ -389,20 +389,23 @@
     "eyebrow": "Newsroom",
     "title": "Latest from Sanjivani",
     "all": "All news and media",
-    "cbg": {
-      "category": "Green energy",
-      "title": "Union Cooperation Minister inaugurates India's first cooperative CBG plant at Kopargaon",
-      "mediaLabel": "Inauguration of the CBG plant"
+    "waterConservation": {
+      "category": "Water conservation",
+      "title": "Sanjivani Yuva Pratishthan spreads awareness on water conservation with symbolic 'Dushkalasur' burning at Tehsil Maidan",
+      "excerpt": "The 'Dushkalasur Burning and Water Conservation Sankalp' programme at Tehsil Maidan, Kopargaon, turned the traditional Mahishasura theme into a message against drought and water scarcity, urging citizens to adopt sustainable water management and reduce wastage.",
+      "mediaLabel": "Water conservation awareness programme"
     },
-    "university": {
-      "category": "Education",
-      "title": "Sanjivani University signs an MoU with the University of Technology & Applied Science, Shinas, Oman",
-      "mediaLabel": "Sanjivani University"
+    "rakshaRath": {
+      "category": "Community",
+      "title": "'Ek Rakhi Soldiers' Raksha Rath reaches the Kutch border, carrying the love of thousands of Indians",
+      "excerpt": "The Raksha Rath, which set off from Shirdi, completed a journey across Maharashtra and Gujarat to the India border, carrying thousands of rakhis and heartfelt messages from citizens to the soldiers stationed at the nation's frontiers.",
+      "mediaLabel": "The Raksha Rath campaign"
     },
-    "crushing": {
-      "category": "Sugar",
-      "title": "Crushing season 2026–27 begins",
-      "mediaLabel": "Crushing season at the sugar factory"
+    "hospitalOnWheels": {
+      "category": "CSR",
+      "title": "Hospital on Wheels transforming rural healthcare in Kopargaon",
+      "excerpt": "For 25 years the Hospital on Wheels initiative has brought essential healthcare directly to rural communities, covering nearly 90 villages across Kopargaon Taluka for residents with limited access to medical facilities.",
+      "mediaLabel": "Hospital on Wheels healthcare service"
     }
   },
   "pathways": {
