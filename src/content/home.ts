@@ -13,6 +13,7 @@ import type {
 import heroGreenEnergy from '@/assets/images/hero-green-energy.webp';
 import heroEducation from '@/assets/images/hero-education.webp';
 import heroLegacy from '@/assets/images/hero-legacy.webp';
+import heroMobile from '@/assets/images/hero-mobile.webp';
 import founderShankarrao from '@/assets/images/founder-shankarrao.webp';
 import bizSugar from '@/assets/images/biz-sugar.webp';
 import bizSpirits from '@/assets/images/biz-spirits.webp';
@@ -54,6 +55,13 @@ export const navigation = [
  * `objectPosition` keeps the busiest part of each frame inside the visible crop,
  * so the values follow each photo's measured detail centroid (54–62%) rather than
  * the earlier hard right-edge bias, which cropped the subject off on wide screens.
+ *
+ * The 16:9 frames crop badly in a phone-shaped viewport, so every slide carries
+ * the same portrait photograph (`heroMobile`, 860×1528) as its `mobile` source.
+ * Below 768px the browser picks that source instead of the wide frame, which also
+ * means only one image is ever downloaded — the wide ones stay desktop-only. The
+ * carousel is held on the first slide at that width (see `HeroCarousel`), so the
+ * phone shows a single static hero rather than the same photo three times.
  */
 export const heroSlides: HeroSlide[] = [
   {
@@ -64,6 +72,7 @@ export const heroSlides: HeroSlide[] = [
     media: {
       type: 'image',
       src: heroLegacy,
+      mobile: heroMobile,
       labelKey: 'hero.slides.legacy.mediaLabel',
     },
   },
@@ -75,6 +84,7 @@ export const heroSlides: HeroSlide[] = [
     media: {
       type: 'image',
       src: heroGreenEnergy,
+      mobile: heroMobile,
       labelKey: 'hero.slides.greenEnergy.mediaLabel',
     },
   },
@@ -86,6 +96,7 @@ export const heroSlides: HeroSlide[] = [
     media: {
       type: 'image',
       src: heroEducation,
+      mobile: heroMobile,
       labelKey: 'hero.slides.education.mediaLabel',
     },
   },

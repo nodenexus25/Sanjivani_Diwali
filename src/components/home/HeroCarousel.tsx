@@ -32,7 +32,8 @@ const TOP_PADDING = 120;
  *    bottom-anchored and the two have to move together at every viewport height.
  *  - `SCRIM_HEADER` covers the header strip, which overlays the hero.
  *  - `SCRIM_TABS` covers the slide tabs along the bottom edge.
- *  - `SCRIM_MOBILE` replaces all three below `md`, where the copy is centred.
+ *  - Below `md` the copy moves below the photograph, so mobile only keeps the
+ *    header strip and the image itself stays unobstructed.
  *
  * Each gradient ends on an explicit `rgba(30,8,2,0)` rather than the `transparent`
  * keyword: `transparent` is transparent *black*, which drags the hue towards grey as
@@ -53,9 +54,6 @@ const SCRIM_HEADER =
   'linear-gradient(180deg, rgba(30,8,2,0.78) 0%, rgba(30,8,2,0.68) 82%, rgba(30,8,2,0) 100%)';
 const SCRIM_TABS =
   'linear-gradient(0deg, rgba(30,8,2,0.78) 0%, rgba(30,8,2,0.50) 55%, rgba(30,8,2,0) 100%)';
-const SCRIM_MOBILE =
-  'linear-gradient(180deg, rgba(30,8,2,0.32) 0%, rgba(30,8,2,0.60) 45%, rgba(30,8,2,0.88) 100%)';
-
 /**
  * `requestIdleCallback` is optional and not in every TS DOM lib version, so the
  * window is viewed through this narrower shape instead of being augmented.
@@ -95,7 +93,13 @@ interface SlideMediaProps {
   videosEnabled: boolean;
 }
 
-/** One full-bleed background layer. Decorative: the H1 carries the meaning. */
+/**
+ * One background layer. Decorative: the H1 carries the meaning.
+ *
+ * Each slide is a `<picture>`: a wide frame for desktop and a portrait crop
+ * served below 768px. Only the matching source is fetched, so a phone never
+ * downloads the wide photograph and a desktop never downloads the portrait one.
+ */
 function SlideMedia({ slide, priority, videosEnabled }: SlideMediaProps) {
   const { media } = slide;
   const crop = slide.objectPosition ? { objectPosition: slide.objectPosition } : undefined;
@@ -109,7 +113,7 @@ function SlideMedia({ slide, priority, videosEnabled }: SlideMediaProps) {
           src={media.poster}
           alt=""
           aria-hidden="true"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain md:object-cover"
           style={crop}
         />
       ) : null;
@@ -117,7 +121,7 @@ function SlideMedia({ slide, priority, videosEnabled }: SlideMediaProps) {
 
     return (
       <video
-        className="h-full w-full object-cover"
+        className="h-full w-full object-contain md:object-cover"
         style={crop}
         src={media.src}
         poster={media.poster}
@@ -133,27 +137,38 @@ function SlideMedia({ slide, priority, videosEnabled }: SlideMediaProps) {
   if (!media.src) return <div className="placeholder h-full w-full bg-brown-800" />;
 
   return (
-    <picture>
-      {media.mobile ? <source media="(max-width: 767px)" srcSet={media.mobile} /> : null}
-      <img
-        src={media.src}
-        alt=""
-        aria-hidden="true"
-        width={2560}
-        height={1440}
-        decoding="async"
-        loading={priority ? 'eager' : 'lazy'}
-        fetchpriority={priority ? 'high' : 'auto'}
-        className="h-full w-full object-cover"
-        style={crop}
-      />
-    </picture>
+    <>
+      {media.mobile ? (
+        <img
+          src={media.mobile}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full scale-[1.05] object-cover brightness-[0.42] blur-xl md:hidden"
+        />
+      ) : null}
+      <picture className="relative block h-full w-full">
+        {media.mobile ? <source media="(max-width: 767px)" srcSet={media.mobile} /> : null}
+        <img
+          src={media.src}
+          alt=""
+          aria-hidden="true"
+          width={2560}
+          height={1440}
+          decoding="async"
+          loading={priority ? 'eager' : 'lazy'}
+          fetchpriority={priority ? 'high' : 'auto'}
+          className="h-full w-full object-contain md:object-cover"
+          style={crop}
+        />
+      </picture>
+    </>
   );
 }
 
 export function HeroCarousel() {
   const { t } = useTranslation();
   const reduceMotion = useReducedMotion() ?? false;
+  const [isMobile, setIsMobile] = useState(false);
   // The prerender pass has no viewport and never runs effects, so the staggered
   // entrance has to be skipped or the hero would ship as invisible markup.
   const canAnimate = !reduceMotion && typeof window !== 'undefined';
@@ -164,7 +179,27 @@ export function HeroCarousel() {
   const { index, next, prev, goTo, progress, setPaused } = useCarousel({
     count,
     interval: SLIDE_INTERVAL,
+    enabled: !isMobile,
   });
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    const sync = (event?: MediaQueryListEvent) => {
+      setIsMobile(event?.matches ?? mediaQuery.matches);
+    };
+
+    sync();
+
+    if (typeof mediaQuery.addEventListener === 'function') {
+      mediaQuery.addEventListener('change', sync);
+      return () => mediaQuery.removeEventListener('change', sync);
+    }
+
+    mediaQuery.addListener(sync);
+    return () => mediaQuery.removeListener(sync);
+  }, []);
 
   // Hover/focus pausing is transient; the pause button is a sticky user choice.
   // Keeping them apart means moving the mouse away never resumes a paused show.
@@ -269,8 +304,7 @@ export function HeroCarousel() {
       id="top"
       aria-roledescription="carousel"
       aria-label={t('hero.aria')}
-      className="min-h-hero relative flex flex-col overflow-hidden bg-brown-950"
-      style={{ paddingTop: TOP_PADDING }}
+      className="relative overflow-hidden bg-brown-950 md:flex md:min-h-hero md:flex-col"
       onMouseEnter={() => setHoverPaused(true)}
       onMouseLeave={() => setHoverPaused(false)}
       onFocus={handleFocus}
@@ -278,7 +312,7 @@ export function HeroCarousel() {
       onKeyDown={handleKeyDown}
     >
       {/* Layer 1 — background media, one stacked layer per slide. */}
-      <div aria-hidden="true" className="absolute inset-0">
+      <div aria-hidden="true" className="absolute inset-x-0 top-0 h-[100svh] md:inset-0 md:h-auto">
         {slides.map((slide, i) => (
           <div
             key={slide.id}
@@ -313,11 +347,56 @@ export function HeroCarousel() {
           className="absolute inset-x-0 bottom-0 hidden h-[168px] md:block"
           style={{ background: SCRIM_TABS }}
         />
-        <div className="absolute inset-0 md:hidden" style={{ background: SCRIM_MOBILE }} />
+        <div
+          className="absolute inset-x-0 top-0 h-[108px] md:hidden"
+          style={{ background: SCRIM_HEADER }}
+        />
       </div>
 
-      {/* Layer 3 — slide copy, bottom-left inside the container. */}
-      <div className="relative z-10 flex flex-1 items-end pb-14">
+      {/* Mobile hero shows the image on its own first, then the copy below it. */}
+      <div aria-hidden="true" className="h-[100svh] md:hidden" />
+
+      <div className="relative z-10 bg-brown-950 px-6 pb-8 pt-7 md:hidden">
+        <p aria-live="polite" className="sr-only">
+          {announcement}
+        </p>
+
+        <motion.div
+          className="mx-auto flex w-full max-w-[780px] flex-col gap-6"
+          initial={canAnimate ? { opacity: 0, y: 16 } : false}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.35, ease: EASE_EDITORIAL }}
+        >
+          {active ? (
+            <>
+              <motion.div {...slideStagger(0)}>
+                <Eyebrow tone="dark" withRule>
+                  {t(`hero.slides.${active.id}.eyebrow`)}
+                </Eyebrow>
+              </motion.div>
+
+              <motion.h1
+                className="font-display text-[clamp(42px,11vw,64px)] font-normal leading-[1.02] tracking-[-0.02em] text-ivory"
+                {...slideStagger(1)}
+              >
+                {t(`hero.slides.${active.id}.title`)}
+              </motion.h1>
+
+              <motion.div className="flex flex-col gap-3" {...slideStagger(2)}>
+                <Button variant="on-dark" withArrow href={active.ctaHref} className="w-full justify-center">
+                  {t(`hero.slides.${active.id}.cta`)}
+                </Button>
+                <Button variant="outline" href={active.secondaryHref} className="w-full justify-center">
+                  {t('hero.secondary')}
+                </Button>
+              </motion.div>
+            </>
+          ) : null}
+        </motion.div>
+      </div>
+
+      {/* Layer 3 — desktop slide copy, bottom-left inside the container. */}
+      <div className="relative z-10 hidden flex-1 items-end pb-14 md:flex" style={{ paddingTop: TOP_PADDING }}>
         <Container className="w-full">
           <p aria-live="polite" className="sr-only">
             {announcement}
@@ -360,7 +439,7 @@ export function HeroCarousel() {
                   </motion.h1>
 
                   <motion.p
-                    className="max-w-[600px] text-[20px] leading-[1.6] text-brown-200"
+                    className="hidden max-w-[600px] text-[20px] leading-[1.6] text-brown-200 md:block"
                     {...slideStagger(2)}
                   >
                     {t(`hero.slides.${active.id}.body`)}
@@ -409,7 +488,7 @@ export function HeroCarousel() {
       </div>
 
       {/* Layer 4 — slide tabs along the bottom edge, inside the container. */}
-      <div className="relative z-10 pb-6">
+      <div className="relative z-10 hidden pb-6 md:block">
         <Container>
           <div className="flex flex-col gap-4 border-t border-ivory/22 sm:flex-row sm:items-stretch sm:gap-8">
             <div
@@ -450,7 +529,7 @@ export function HeroCarousel() {
               })}
             </div>
 
-            <div className="flex shrink-0 items-center gap-3">
+            <div className="hidden shrink-0 items-center gap-3 md:flex">
               <CarouselNavButton label={t('common.prev')} onClick={handlePrev}>
                 <ChevronLeft aria-hidden="true" className="h-5 w-5" />
               </CarouselNavButton>

@@ -96,6 +96,14 @@
   animation: ken-burns 16s ease-in-out infinite alternate;
 }
 
+/* Below md the hero uses a contained foreground image over a softened backdrop,
+   so the drift zoom would crop the framed photograph. Hold it still there. */
+@media (max-width: 767px) {
+  .ken-burns {
+    animation: none;
+  }
+}
+
 /* Scroll cue: a 1px line travelling down its own track. */
 @keyframes scroll-cue {
   from {
