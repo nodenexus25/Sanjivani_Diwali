@@ -346,7 +346,7 @@ export const pathways: Pathway[] = [
 
 export const footerBusinessLinks: FooterLink[] = businesses.map((business) => ({
   id: business.id,
-  href: business.href,
+  href: business.id === 'education' ? '#business-education' : business.href,
   external: business.external,
 }));
 
