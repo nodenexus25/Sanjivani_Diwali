@@ -16,7 +16,9 @@ import heroLegacy from '@/assets/images/hero-legacy.webp';
 import heroMobile from '@/assets/images/hero-mobile.webp';
 import founderShankarrao from '@/assets/images/founder-shankarrao.webp';
 import bizSugar from '@/assets/images/biz-sugar.webp';
-import bizSpirits from '@/assets/images/biz-spirits.webp';
+import bizDistillers from '@/assets/images/biz-distillers.webp';
+import bizChemical from '@/assets/images/biz-chemical.webp';
+import bizBanking from '@/assets/images/biz-banking.webp';
 import bizDairy from '@/assets/images/biz-dairy.webp';
 import bizEnergy from '@/assets/images/biz-energy.webp';
 import bizAgri from '@/assets/images/biz-agri.webp';
@@ -57,7 +59,7 @@ export const navigation = [
  * the earlier hard right-edge bias, which cropped the subject off on wide screens.
  *
  * The 16:9 frames crop badly in a phone-shaped viewport, so every slide carries
- * the same portrait photograph (`heroMobile`, 860×1528) as its `mobile` source.
+ * the same portrait photograph (`heroMobile`, 860×1289) as its `mobile` source.
  * Below 768px the browser picks that source instead of the wide frame, which also
  * means only one image is ever downloaded — the wide ones stay desktop-only. The
  * carousel is held on the first slide at that width (see `HeroCarousel`), so the
@@ -107,9 +109,7 @@ export const founder = {
   portraitLabelKey: 'founder.portraitLabel',
   leadership: [
     { name: 'Bipindada Kolhe', roleKey: 'leadership.bipindada' },
-    { name: 'Nitindada Kolhe', roleKey: 'leadership.nitindada' },
     { name: 'Vivek Kolhe', roleKey: 'leadership.vivek' },
-    { name: 'Amit Kolhe', roleKey: 'leadership.amit' },
   ] satisfies Person[],
 };
 
@@ -127,14 +127,59 @@ export const businesses: Business[] = [
     ],
   },
   {
-    id: 'spirits',
-    href: 'https://www.sanjivanispirits.com/',
+    id: 'distillers',
+    href: 'https://chemicals-website-psi.vercel.app/products/ethanol',
     external: true,
-    media: { type: 'image', src: bizSpirits, labelKey: 'businesses.spirits.mediaLabel' },
+    media: { type: 'image', src: bizDistillers, labelKey: 'businesses.distillers.mediaLabel' },
     details: [
       {
         id: 'operations',
-        items: [{ id: 'distillery' }, { id: 'portfolio' }],
+        items: [
+          {
+            id: 'ethanol',
+            href: 'https://chemicals-website-psi.vercel.app/products/ethanol',
+            external: true,
+          },
+          { id: 'distillery' },
+          {
+            id: 'portfolio',
+            href: 'https://www.sanjivanispirits.com/',
+            external: true,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'chemical',
+    href: 'https://chemicals-website-psi.vercel.app/',
+    external: true,
+    media: { type: 'image', src: bizChemical, labelKey: 'businesses.chemical.mediaLabel' },
+    details: [
+      {
+        id: 'products',
+        items: [
+          {
+            id: 'aceticAcid',
+            href: 'https://chemicals-website-psi.vercel.app/products/acetic-acid',
+            external: true,
+          },
+          {
+            id: 'ethylAcetate',
+            href: 'https://chemicals-website-psi.vercel.app/products/ethyl-acetate',
+            external: true,
+          },
+          {
+            id: 'aceticAnhydride',
+            href: 'https://chemicals-website-psi.vercel.app/products/acetic-anhydride',
+            external: true,
+          },
+          {
+            id: 'bulkDrugs',
+            href: 'https://chemicals-website-psi.vercel.app/products/bulk-drugs',
+            external: true,
+          },
+        ],
       },
     ],
   },
@@ -158,16 +203,12 @@ export const businesses: Business[] = [
         id: 'operations',
         items: [
           {
-            id: 'ethanol',
-            href: 'https://chemicals-website-psi.vercel.app/products/ethanol',
+            id: 'biogas',
+            href: 'https://chemicals-website-psi.vercel.app/plants/bio-gas-division',
             external: true,
           },
-          {
-            id: 'cogen',
-            href: 'https://chemicals-website-psi.vercel.app/plants/co-generation-division',
-            external: true,
-          },
-          { id: 'biogas' },
+          { id: 'cng' },
+          { id: 'potash' },
         ],
       },
     ],
@@ -229,33 +270,21 @@ export const businesses: Business[] = [
     media: { type: 'image', src: bizEducation, labelKey: 'businesses.education.mediaLabel' },
     details: [
       {
-        id: 'featuredSchools',
+        id: 'institutions',
         items: [
+          {
+            id: 'university',
+            href: 'https://sanjivani.edu.in/',
+            external: true,
+          },
+          {
+            id: 'institutes',
+            href: 'https://sanjivani.org.in/',
+            external: true,
+          },
           {
             id: 'sisKharghar',
             href: 'https://www.sanjivaniis.com/index.php',
-            external: true,
-          },
-          { id: 'englishMedium' },
-        ],
-      },
-      {
-        id: 'schoolNetwork',
-        divider: true,
-        items: [
-          {
-            id: 'sisShirdi',
-            href: 'https://sanjivaniinternational.org.in/',
-            external: true,
-          },
-          {
-            id: 'academyKopargaon',
-            href: 'https://sanjivaniacademy.org.in/',
-            external: true,
-          },
-          {
-            id: 'academyVaijapur',
-            href: 'https://www.sanjivaniacademy.com/',
             external: true,
           },
         ],
@@ -272,6 +301,12 @@ export const businesses: Business[] = [
         items: [{ id: 'credit' }, { id: 'shg' }, { id: 'community' }],
       },
     ],
+  },
+  {
+    // Site still to be supplied by the client.
+    id: 'banking',
+    href: '#businesses',
+    media: { type: 'image', src: bizBanking, labelKey: 'businesses.banking.mediaLabel' },
   },
   {
     id: 'it',

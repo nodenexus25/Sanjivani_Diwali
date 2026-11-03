@@ -19,7 +19,8 @@ const PLAN = [
   ['school-turf-night.jpg', 'hero-deepavali.webp', 1600, 78],
   ['agri-home-3.png', 'hero-green-energy.webp', 1600, 78],
   ['school-campus-aerial.jpg', 'hero-education.webp', 1600, 78],
-  ['agri-home-1.png', 'hero-legacy.webp', 1600, 78],
+  ['hero-legacy-tree-updated.png', 'hero-legacy.webp', 1600, 78],
+  ['hero-mobile-tree-updated.png', 'hero-mobile.webp', 860, 80],
 
   // people
   ['people-shankarrao.png', 'founder-shankarrao.webp', 1000, 80],
@@ -29,7 +30,17 @@ const PLAN = [
   ['amrut-banner-2.png', 'biz-energy.webp', 800, 76],
   ['agri-command-1.png', 'biz-agri.webp', 800, 76],
   ['pharma-home.png', 'biz-pharma.webp', 800, 76],
-  ['school-building.jpg', 'biz-education.webp', 800, 76],
+  ['education-collage.jpeg', 'biz-education.webp', 800, 78, '16:10'],
+  ['chem-prod-1.png', 'biz-chemical.webp', 800, 78, '16:10'],
+  ['biz-distillers-source.png', 'biz-distillers.webp', 800, 78, '16:10'],
+  // The supplied bank art sits on a framed, rounded plate; cut just inside it.
+  [
+    'biz-banking-source.png',
+    'biz-banking.webp',
+    800,
+    78,
+    { left: 26, top: 24, width: 1522, height: 951 },
+  ],
   ['amrut-banner-3.png', 'biz-rural.webp', 800, 76],
 
   // feature block

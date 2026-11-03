@@ -73,7 +73,7 @@
       "legacy": {
         "eyebrow": "Since 1960",
         "title": "Built by farmers. Growing for six decades.",
-        "body": "Founded as a cooperative sugar mill by Late Shri Shankarraoji Kolhe Saheb, the group now spans sugar, spirits, dairy, energy, agri-inputs, fisheries, pharma, education and IT.",
+        "body": "Founded as a cooperative sugar mill by Late Shri Shankarraoji Kolhe Saheb, the group now spans sugar, distilleries, chemicals, dairy, energy, agri-inputs, fisheries, pharma, education, banking and IT.",
         "cta": "Explore our businesses",
         "tab": "Our legacy",
         "mediaLabel": "Tree of initiatives at sunset"
@@ -92,7 +92,7 @@
   "leadership": {
     "bipindada": "Chairman, Sanjivani Group of Industries",
     "nitindada": "Chairman, Sanjivani Rural Education Society",
-    "vivek": "Chairman, Sahakar Maharshi Shankarrao Kolhe SSK",
+    "vivek": "Member of Maharashtra Legislative Council (MLC)\nChairman, Sahakar Maharshi Shankarrao Kolhe SSK",
     "amit": "Managing Trustee, Sanjivani Rural Education Society"
   },
   "businesses": {
@@ -119,22 +119,55 @@
         }
       }
     },
-    "spirits": {
-      "tag": "SPIRITS",
-      "title": "Sanjivani Spirits",
-      "desc": "The group's liquor business — quality, affordable spirits from its own distillery at Kopargaon.",
-      "mediaLabel": "Sanjivani Spirits emblem",
+    "distillers": {
+      "tag": "DISTILLERS",
+      "title": "Ethanol & spirits distillery",
+      "desc": "Fuel-grade and pharma-grade ethanol, alongside the group's spirits range, distilled at its own works in Kopargaon.",
+      "mediaLabel": "Distillery plant with storage tanks and oak barrels at sunset",
       "details": {
         "operations": {
           "title": "Operations",
           "items": {
+            "ethanol": {
+              "title": "Ethanol division",
+              "body": "Fuel-grade and pharma-grade ethanol made directly from enzymatic sugar juice."
+            },
             "distillery": {
               "title": "Distillery",
               "body": "Spirit made in a finely filtered vacuum distillation plant at the group's Kopargaon works."
             },
             "portfolio": {
-              "title": "Product range",
+              "title": "Sanjivani Spirits",
               "body": "The Bobby Santra, Zingat Santra and Sanjivani Santra labels make up the group's flavoured-spirits range."
+            }
+          }
+        }
+      }
+    },
+    "chemical": {
+      "tag": "CHEMICALS",
+      "title": "Sanjivani chemical division",
+      "desc": "Acetic acid, ethyl acetate, acetic anhydride and bulk drugs from the group's integrated, bio-energy-powered campus.",
+      "mediaLabel": "Laboratory flask of acetic acid",
+      "details": {
+        "products": {
+          "title": "Product range",
+          "items": {
+            "aceticAcid": {
+              "title": "Acetic acid",
+              "body": "Core industrial chemical for textiles, food processing, adhesives and synthesis."
+            },
+            "ethylAcetate": {
+              "title": "Ethyl acetate",
+              "body": "Fast-evaporating solvent for pharma, paints, adhesives and cosmetics."
+            },
+            "aceticAnhydride": {
+              "title": "Acetic anhydride",
+              "body": "Acetylating agent for pharma, cellulose acetate and specialty plastics."
+            },
+            "bulkDrugs": {
+              "title": "Bulk drugs",
+              "body": "Active pharmaceutical ingredients and intermediates made under cGMP."
             }
           }
         }
@@ -167,24 +200,24 @@
     },
     "energy": {
       "tag": "GREEN ENERGY",
-      "title": "Ethanol, co-generation & biogas",
-      "desc": "Fuel ethanol, renewable power for the grid and compressed biogas from the by-products of every crushing season.",
-      "mediaLabel": "Ethanol and co-generation operations at the factory campus",
+      "title": "Biogas, CNG & potash",
+      "desc": "Biogas, compressed bio-CNG and potash recovered from the by-products of every crushing season.",
+      "mediaLabel": "Biogas and green-energy operations at the factory campus",
       "details": {
         "operations": {
           "title": "Operations",
           "items": {
-            "ethanol": {
-              "title": "Ethanol division",
-              "body": "Fuel-grade and pharma-grade ethanol linked to the group's integrated process."
-            },
-            "cogen": {
-              "title": "Co-generation plant",
-              "body": "Renewable steam and grid power integrated with the factory campus."
-            },
             "biogas": {
-              "title": "Biogas operations",
-              "body": "Compressed biogas from crushing-season by-products and process residue."
+              "title": "Biogas plant",
+              "body": "Anaerobic digestion of process residue into biogas for the factory campus."
+            },
+            "cng": {
+              "title": "Bio-CNG",
+              "body": "Purified, compressed biogas for vehicles and industrial fuel."
+            },
+            "potash": {
+              "title": "Potash",
+              "body": "Potash recovered from process streams and returned to farmers' fields."
             }
           }
         }
@@ -273,35 +306,22 @@
       "tag": "EDUCATION",
       "title": "Schools, University & Institutes",
       "desc": "From Kharghar schools to Kopargaon's institutes and university under the Sanjivani education network.",
-      "mediaLabel": "Sanjivani International School building at Kharghar",
+      "mediaLabel": "Collage of Sanjivani school, university and institute campuses",
       "details": {
-        "featuredSchools": {
-          "title": "Schools",
+        "institutions": {
+          "title": "Institutions",
           "items": {
+            "university": {
+              "title": "Sanjivani University",
+              "body": "The group's university campus at Kopargaon."
+            },
+            "institutes": {
+              "title": "Sanjivani Group of Institutes",
+              "body": "Colleges and schools at Kopargaon, from KG to PhD."
+            },
             "sisKharghar": {
               "title": "Sanjivani International School, Kharghar",
               "body": "ICSE/ISC campus focused on enrichment, enhancement and excellence."
-            },
-            "englishMedium": {
-              "title": "Sanjivani English Medium School",
-              "body": "English-medium schooling in Kopargaon under the Sanjivani education family."
-            }
-          }
-        },
-        "schoolNetwork": {
-          "title": "School network",
-          "items": {
-            "sisShirdi": {
-              "title": "Sanjivani International School, Shirdi",
-              "body": "Holistic school campus at Shirdi."
-            },
-            "academyKopargaon": {
-              "title": "Sanjivani Academy, Kopargaon",
-              "body": "CBSE campus with activity-based learning, labs and sports."
-            },
-            "academyVaijapur": {
-              "title": "Sanjivani Academy, Vaijapur",
-              "body": "CBSE secondary school focused on academics, sports and arts."
             }
           }
         }
@@ -331,6 +351,12 @@
           }
         }
       }
+    },
+    "banking": {
+      "tag": "BANKING & FINANCE",
+      "title": "Banking & finance",
+      "desc": "Cooperative banking and credit that keep savings and lending close to the farmers and families the group serves.",
+      "mediaLabel": "Bank branch beside farmland, with a farming family in the foreground"
     },
     "it": {
       "tag": "IT & CONSULTING",
@@ -367,12 +393,30 @@
   },
   "circular": {
     "label": "Our circular economy — nothing from the cane is wasted",
-    "cane": { "title": "Sugarcane", "note": "from farmer members" },
-    "sugar": { "title": "Sugar", "note": "crushing & refining" },
-    "molasses": { "title": "Molasses", "note": "to the distillery" },
-    "ethanol": { "title": "Ethanol & power", "note": "clean fuel, green grid" },
-    "biogas": { "title": "Biogas", "note": "press mud & residue" },
-    "potash": { "title": "Potash & compost", "note": "back to the fields" }
+    "cane": {
+      "title": "Sugarcane",
+      "note": "from farmer members"
+    },
+    "sugar": {
+      "title": "Sugar",
+      "note": "crushing & refining"
+    },
+    "molasses": {
+      "title": "Molasses",
+      "note": "to the distillery"
+    },
+    "ethanol": {
+      "title": "Ethanol & power",
+      "note": "clean fuel, green grid"
+    },
+    "biogas": {
+      "title": "Biogas",
+      "note": "press mud & residue"
+    },
+    "potash": {
+      "title": "Potash & compost",
+      "note": "back to the fields"
+    }
   },
   "timeline": {
     "eyebrow": "Six decades of firsts",
@@ -459,7 +503,8 @@
     },
     "business": {
       "sugar": "Sugar & allied",
-      "spirits": "Spirits",
+      "distillers": "Distillers",
+      "chemical": "Chemicals",
       "dairy": "Dairy",
       "energy": "Green energy",
       "agri": "Agri-inputs",
@@ -467,12 +512,13 @@
       "pharma": "Pharmaceuticals",
       "education": "Education",
       "rural": "Rural finance",
+      "banking": "Banking & finance",
       "it": "Information technology"
     }
   },
   "meta": {
     "title": "Sanjivani Group — Six decades of growing Maharashtra",
-    "description": "Founded in 1960 as a cooperative sugar mill at Kopargaon, the Sanjivani Group today spans sugar, spirits, dairy, green energy, agri-inputs, fisheries, pharmaceuticals, education, rural development and information technology.",
+    "description": "Founded in 1960 as a cooperative sugar mill at Kopargaon, the Sanjivani Group today spans sugar, distilleries, chemicals, dairy, green energy, agri-inputs, fisheries, pharmaceuticals, education, rural development, banking and finance, and information technology.",
     "ogAlt": "Sanjivani Group, Kopargaon"
   }
 }

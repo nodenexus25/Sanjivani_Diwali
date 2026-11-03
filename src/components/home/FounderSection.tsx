@@ -44,7 +44,7 @@ export function FounderSection() {
                 {founder.leadership.map((person) => (
                   <li key={person.name}>
                     <p className="font-display text-[20px] font-semibold text-brown-900">{person.name}</p>
-                    <p className="mt-1 text-[14px] text-brown-700">{t(person.roleKey)}</p>
+                    <p className="mt-1 whitespace-pre-line text-[14px] text-brown-700">{t(person.roleKey)}</p>
                   </li>
                 ))}
               </ul>
