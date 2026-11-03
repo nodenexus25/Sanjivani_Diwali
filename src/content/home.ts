@@ -128,19 +128,19 @@ export const businesses: Business[] = [
   },
   {
     id: 'distillers',
-    href: 'https://chemicals-website-psi.vercel.app/products/ethanol',
+    href: 'https://www.sanjivanispirits.com/',
     external: true,
     media: { type: 'image', src: bizDistillers, labelKey: 'businesses.distillers.mediaLabel' },
     details: [
       {
         id: 'operations',
         items: [
+          { id: 'ethanol' },
           {
-            id: 'ethanol',
-            href: 'https://chemicals-website-psi.vercel.app/products/ethanol',
+            id: 'distillery',
+            href: 'https://www.sanjivanispirits.com/',
             external: true,
           },
-          { id: 'distillery' },
           {
             id: 'portfolio',
             href: 'https://www.sanjivanispirits.com/',
@@ -152,33 +152,16 @@ export const businesses: Business[] = [
   },
   {
     id: 'chemical',
-    href: 'https://chemicals-website-psi.vercel.app/',
-    external: true,
+    href: '#businesses',
     media: { type: 'image', src: bizChemical, labelKey: 'businesses.chemical.mediaLabel' },
     details: [
       {
         id: 'products',
         items: [
-          {
-            id: 'aceticAcid',
-            href: 'https://chemicals-website-psi.vercel.app/products/acetic-acid',
-            external: true,
-          },
-          {
-            id: 'ethylAcetate',
-            href: 'https://chemicals-website-psi.vercel.app/products/ethyl-acetate',
-            external: true,
-          },
-          {
-            id: 'aceticAnhydride',
-            href: 'https://chemicals-website-psi.vercel.app/products/acetic-anhydride',
-            external: true,
-          },
-          {
-            id: 'bulkDrugs',
-            href: 'https://chemicals-website-psi.vercel.app/products/bulk-drugs',
-            external: true,
-          },
+          { id: 'aceticAcid' },
+          { id: 'ethylAcetate' },
+          { id: 'aceticAnhydride' },
+          { id: 'bulkDrugs' },
         ],
       },
     ],
@@ -201,15 +184,7 @@ export const businesses: Business[] = [
     details: [
       {
         id: 'operations',
-        items: [
-          {
-            id: 'biogas',
-            href: 'https://chemicals-website-psi.vercel.app/plants/bio-gas-division',
-            external: true,
-          },
-          { id: 'cng' },
-          { id: 'potash' },
-        ],
+        items: [{ id: 'biogas' }, { id: 'cng' }, { id: 'potash' }],
       },
     ],
   },
@@ -226,8 +201,7 @@ export const businesses: Business[] = [
   },
   {
     id: 'fisheries',
-    href: 'https://sanjivani-fish.vercel.app/',
-    external: true,
+    href: '#businesses',
     media: { type: 'image', src: bizFisheries, labelKey: 'businesses.fisheries.mediaLabel' },
     details: [
       {
