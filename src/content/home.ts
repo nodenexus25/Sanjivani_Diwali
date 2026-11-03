@@ -59,7 +59,7 @@ export const navigation = [
  * the earlier hard right-edge bias, which cropped the subject off on wide screens.
  *
  * The 16:9 frames crop badly in a phone-shaped viewport, so every slide carries
- * the same portrait photograph (`heroMobile`, 860×1289) as its `mobile` source.
+ * the same portrait photograph (`heroMobile`, 860×1528) as its `mobile` source.
  * Below 768px the browser picks that source instead of the wide frame, which also
  * means only one image is ever downloaded — the wide ones stay desktop-only. The
  * carousel is held on the first slide at that width (see `HeroCarousel`), so the

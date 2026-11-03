@@ -20,7 +20,7 @@ const PLAN = [
   ['agri-home-3.png', 'hero-green-energy.webp', 1600, 78],
   ['school-campus-aerial.jpg', 'hero-education.webp', 1600, 78],
   ['hero-legacy-tree-updated.png', 'hero-legacy.webp', 1600, 78],
-  ['hero-mobile-tree-updated.png', 'hero-mobile.webp', 860, 80],
+  ['hero-mobile-tree-tall.png', 'hero-mobile.webp', 860, 80],
 
   // people
   ['people-shankarrao.png', 'founder-shankarrao.webp', 1000, 80],

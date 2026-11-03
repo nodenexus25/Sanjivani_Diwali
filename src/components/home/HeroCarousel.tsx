@@ -20,6 +20,13 @@ const SWIPE_THRESHOLD = 60;
 const CROSSFADE = '900ms';
 /** Clears the fixed header, which overlays the hero. */
 const TOP_PADDING = 120;
+/**
+ * Mobile image frame. The portrait (860×1528) is contained, so a screen taller than
+ * the photo shows a blurred band above and below it. 177.67vw is the photo's height
+ * at full width; the frame keeps 60% of the leftover band, trimming it by 40%, and
+ * never grows past the screen.
+ */
+const MOBILE_MEDIA_HEIGHT = 'h-[min(100svh,calc(60svh_+_71.07vw))]';
 
 /**
  * Functional scrims. They keep the copy legible without veiling the photograph, so
@@ -312,7 +319,10 @@ export function HeroCarousel() {
       onKeyDown={handleKeyDown}
     >
       {/* Layer 1 — background media, one stacked layer per slide. */}
-      <div aria-hidden="true" className="absolute inset-x-0 top-0 h-[100svh] md:inset-0 md:h-auto">
+      <div
+        aria-hidden="true"
+        className={cx('absolute inset-x-0 top-0 md:inset-0 md:h-auto', MOBILE_MEDIA_HEIGHT)}
+      >
         {slides.map((slide, i) => (
           <div
             key={slide.id}
@@ -354,7 +364,7 @@ export function HeroCarousel() {
       </div>
 
       {/* Mobile hero shows the image on its own first, then the copy below it. */}
-      <div aria-hidden="true" className="h-[100svh] md:hidden" />
+      <div aria-hidden="true" className={cx(MOBILE_MEDIA_HEIGHT, 'md:hidden')} />
 
       <div className="relative z-10 bg-brown-950 px-6 pb-8 pt-7 md:hidden">
         <p aria-live="polite" className="sr-only">
