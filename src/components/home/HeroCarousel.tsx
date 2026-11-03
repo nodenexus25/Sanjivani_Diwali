@@ -21,12 +21,12 @@ const CROSSFADE = '900ms';
 /** Clears the fixed header, which overlays the hero. */
 const TOP_PADDING = 120;
 /**
- * Mobile image frame. The portrait (860×1528) is contained, so a screen taller than
- * the photo shows a blurred band above and below it. 177.67vw is the photo's height
+ * Mobile image frame. The portrait (860×1529) is contained, so a screen taller than
+ * the photo shows a blurred band above and below it. 177.78vw is the photo's height
  * at full width; the frame keeps 60% of the leftover band, trimming it by 40%, and
  * never grows past the screen.
  */
-const MOBILE_MEDIA_HEIGHT = 'h-[min(100svh,calc(60svh_+_71.07vw))]';
+const MOBILE_MEDIA_HEIGHT = 'h-[min(100svh,calc(60svh_+_71.11vw))]';
 
 /**
  * Functional scrims. They keep the copy legible without veiling the photograph, so

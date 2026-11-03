@@ -73,7 +73,7 @@
       "legacy": {
         "eyebrow": "Since 1960",
         "title": "Built by farmers. Growing for six decades.",
-        "body": "Founded as a cooperative sugar mill by Late Shri Shankarraoji Kolhe Saheb, the group now spans sugar, distilleries, chemicals, dairy, energy, agri-inputs, fisheries, pharma, education, banking and IT.",
+        "body": "Founded as a cooperative sugar mill by Late Shri Shankarraoji Kolhe Saheb, the group now spans sugar and the Amrut Sugar brand, distilleries, chemicals, dairy, energy, agri-inputs, fisheries, pharma, education, banking and IT.",
         "cta": "Explore our businesses",
         "tab": "Our legacy",
         "mediaLabel": "Tree of initiatives at sunset"
@@ -87,7 +87,60 @@
     "p2": "In 1983 he founded the Sanjivani Rural Education Society, so that the children of farmers and workers could become engineers, pharmacists and leaders without leaving rural Maharashtra.",
     "portraitLabel": "Sepia-toned portrait of Late Shri Shankarraoji Kolhe Saheb",
     "leadershipTitle": "Leadership",
-    "link": "Our legacy and leadership"
+    "link": "Our legacy and leadership",
+    "knowMore": "Know more",
+    "profile": {
+      "more": "Know more",
+      "less": "Show less",
+      "eyebrow": "Personal details",
+      "name": "Late Shankarrao Genuji Kolhe",
+      "lifespan": "Sahakar Maharshi · 1929 – 2022",
+      "facts": {
+        "education": {
+          "label": "Education",
+          "value": "B.Sc. (Agri), Pune University, 1951"
+        },
+        "born": {
+          "label": "Born",
+          "value": "14 March 1929"
+        },
+        "address": {
+          "label": "Address",
+          "value": "Kolhe Farm House, Yesgaon, Tal. Kopargaon, Dist. Ahmednagar"
+        }
+      },
+      "postsTitle": "Various posts held",
+      "posts": [
+        "6 times Member of Legislative Assembly – Maharashtra State",
+        "Cabinet Minister – Revenue, Transport, Horticulture, State Excise, Co-operation",
+        "Acting Speaker – Maharashtra State Assembly",
+        "Chairman – Indian Sugar Exim Corporation, New Delhi",
+        "Vice President – National Federation, New Delhi",
+        "Managing Trustee – Vasantdada Sugar Institute, Pune",
+        "President – Maharashtra State Co-operative Sugar Association, Mumbai",
+        "Vice President – Shri Sai Baba Sansthan Trust, Shirdi",
+        "Vice President and Managing Council Member – Rayat Shikshan Sanstha, Satara",
+        "President – National Heavy Engineering, Pune"
+      ],
+      "orgsTitle": "Co-operative organisations established",
+      "orgs": [
+        "Vasantdada Sugar Institute, Pune (VSI)",
+        "National Heavy Engineering Ltd., Pune",
+        "Sanjivani Co-operative Sugar Factory and various chemical projects, Sahajanandnagar, Tal. Kopargaon",
+        "Maharashtra Co-operative Press, Pune",
+        "Godavari Khore Co-operative Milk Dairy",
+        "Kopargaon Industrial Estate",
+        "Kopargaon Shetkari Sahakari Sangh",
+        "Yeshwant Poultry Co-operative Society",
+        "Sai Sanjivani Co-operative Bank",
+        "Sanjivani Sahakari Patsanstha",
+        "Amrut and Suvarna Sanjivani Sugarcane Sanstha",
+        "Sanjivani Matsya Vikas Sahakari Sanstha",
+        "Sanjivani Rural Education Society",
+        "Sanjivani Eklavya Adivasi (Tribal) Ashram School",
+        "Sanjivani Pre-Cadet Training Center"
+      ]
+    }
   },
   "leadership": {
     "bipindada": "Chairman, Sanjivani Group of Industries",
@@ -103,16 +156,26 @@
     "moreDetails": "More details",
     "website": "Website",
     "sugar": {
-      "tag": "SUGAR & ALLIED",
+      "tag": "SUGAR FACTORY",
       "title": "Sahakar Maharshi Shankarrao Kolhe SSK",
       "desc": "Our cooperative sugar mill since 1960 — the heart of the group and of the cane economy around Kopargaon.",
-      "mediaLabel": "Historic sugar factory view at Kopargaon",
+      "mediaLabel": "Emblem of Sahakar Maharshi Shankarrao Kolhe Sahakari Sakhar Karkhana, est. 1960"
+    },
+    "amrut": {
+      "tag": "SUGAR & JAGGERY",
+      "title": "Amrut Sugar",
+      "desc": "The group's consumer brand — pure, hygienic crystal sugar and jaggery from the Sanjivani sugar factory at Kopargaon.",
+      "mediaLabel": "Amrut Sugar packs in 1 kg, 2 kg and 5 kg sizes",
       "details": {
-        "allied": {
-          "title": "Allied businesses",
+        "products": {
+          "title": "Product range",
           "items": {
+            "sugar": {
+              "title": "Amrut Sugar",
+              "body": "Uniform-crystal sugar in sealed 1 kg, 2 kg and 5 kg packs, made to ISO 9001:2015 standards."
+            },
             "jaggery": {
-              "title": "Jaggery industry",
+              "title": "Amrut jaggery",
               "body": "Traditional jaggery blocks, powder and cubes under the Amrut range."
             }
           }
@@ -502,7 +565,8 @@
       "edge": "Sanjivani Edge"
     },
     "business": {
-      "sugar": "Sugar & allied",
+      "sugar": "Sugar factory",
+      "amrut": "Amrut Sugar",
       "distillers": "Distillers",
       "chemical": "Chemicals",
       "dairy": "Dairy",
@@ -518,7 +582,7 @@
   },
   "meta": {
     "title": "Sanjivani Group — Six decades of growing Maharashtra",
-    "description": "Founded in 1960 as a cooperative sugar mill at Kopargaon, the Sanjivani Group today spans sugar, distilleries, chemicals, dairy, green energy, agri-inputs, fisheries, pharmaceuticals, education, rural development, banking and finance, and information technology.",
+    "description": "Founded in 1960 as a cooperative sugar mill at Kopargaon, the Sanjivani Group today spans sugar and the Amrut Sugar brand, distilleries, chemicals, dairy, green energy, agri-inputs, fisheries, pharmaceuticals, education, rural development, banking and finance, and information technology.",
     "ogAlt": "Sanjivani Group, Kopargaon"
   }
 }

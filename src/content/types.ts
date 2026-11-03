@@ -56,6 +56,8 @@ export interface Person {
   name: string;
   /** i18n key for the role. */
   roleKey: string;
+  /** Personal website, opened in a new tab. */
+  href?: string;
 }
 
 export interface CircularNode {

@@ -20,18 +20,20 @@ const PLAN = [
   ['agri-home-3.png', 'hero-green-energy.webp', 1600, 78],
   ['school-campus-aerial.jpg', 'hero-education.webp', 1600, 78],
   ['hero-legacy-tree-updated.png', 'hero-legacy.webp', 1600, 78],
-  ['hero-mobile-tree-tall.png', 'hero-mobile.webp', 860, 80],
+  ['hero-mobile-tree-916.jpeg', 'hero-mobile.webp', 860, 80],
 
   // people
   ['people-shankarrao.png', 'founder-shankarrao.webp', 1000, 80],
 
   // business cards — displayed around 400px wide
-  ['amrut-sugar.jpg', 'biz-sugar.webp', 800, 76],
+  // biz-sugar.webp is the SSK emblem (biz-sugar-ssk-logo.jpeg), masked to its circle
+  // and centred on white at 440px in an 800×500 frame — done by hand, not by PLAN.
   ['amrut-banner-2.png', 'biz-energy.webp', 800, 76],
   ['agri-command-1.png', 'biz-agri.webp', 800, 76],
   ['pharma-home.png', 'biz-pharma.webp', 800, 76],
   ['education-collage.jpeg', 'biz-education.webp', 800, 78, '16:10'],
   ['chem-prod-1.png', 'biz-chemical.webp', 800, 78, '16:10'],
+  ['biz-amrut-source.jpg', 'biz-amrut.webp', 800, 78, '16:10'],
   ['biz-distillers-source.png', 'biz-distillers.webp', 800, 78, '16:10'],
   // The supplied bank art sits on a framed, rounded plate; cut just inside it.
   [

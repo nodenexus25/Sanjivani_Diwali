@@ -16,6 +16,7 @@ import heroLegacy from '@/assets/images/hero-legacy.webp';
 import heroMobile from '@/assets/images/hero-mobile.webp';
 import founderShankarrao from '@/assets/images/founder-shankarrao.webp';
 import bizSugar from '@/assets/images/biz-sugar.webp';
+import bizAmrut from '@/assets/images/biz-amrut.webp';
 import bizDistillers from '@/assets/images/biz-distillers.webp';
 import bizChemical from '@/assets/images/biz-chemical.webp';
 import bizBanking from '@/assets/images/biz-banking.webp';
@@ -59,7 +60,7 @@ export const navigation = [
  * the earlier hard right-edge bias, which cropped the subject off on wide screens.
  *
  * The 16:9 frames crop badly in a phone-shaped viewport, so every slide carries
- * the same portrait photograph (`heroMobile`, 860×1528) as its `mobile` source.
+ * the same portrait photograph (`heroMobile`, 860×1529) as its `mobile` source.
  * Below 768px the browser picks that source instead of the wide frame, which also
  * means only one image is ever downloaded — the wide ones stay desktop-only. The
  * carousel is held on the first slide at that width (see `HeroCarousel`), so the
@@ -109,20 +110,26 @@ export const founder = {
   portraitLabelKey: 'founder.portraitLabel',
   leadership: [
     { name: 'Bipindada Kolhe', roleKey: 'leadership.bipindada' },
-    { name: 'Vivek Kolhe', roleKey: 'leadership.vivek' },
+    { name: 'Vivek Kolhe', roleKey: 'leadership.vivek', href: 'https://vivekkolhe.com/' },
   ] satisfies Person[],
 };
 
 export const businesses: Business[] = [
   {
     id: 'sugar',
-    href: 'https://www.amrutsugar.in/',
+    href: 'https://www.sanjivanisugarfactory.com/',
     external: true,
     media: { type: 'image', src: bizSugar, labelKey: 'businesses.sugar.mediaLabel' },
+  },
+  {
+    id: 'amrut',
+    href: 'https://www.amrutsugar.in/',
+    external: true,
+    media: { type: 'image', src: bizAmrut, labelKey: 'businesses.amrut.mediaLabel' },
     details: [
       {
-        id: 'allied',
-        items: [{ id: 'jaggery' }],
+        id: 'products',
+        items: [{ id: 'sugar' }, { id: 'jaggery' }],
       },
     ],
   },

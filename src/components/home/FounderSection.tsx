@@ -45,6 +45,24 @@ export function FounderSection() {
                   <li key={person.name}>
                     <p className="font-display text-[20px] font-semibold text-brown-900">{person.name}</p>
                     <p className="mt-1 whitespace-pre-line text-[14px] text-brown-700">{t(person.roleKey)}</p>
+                    {person.href ? (
+                      <a
+                        href={person.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group mt-3 inline-flex items-center gap-1.5 text-[14px] font-bold text-green-700"
+                      >
+                        {t('founder.knowMore')}
+                        <span className="sr-only">
+                          {' '}
+                          — {person.name} {t('common.external')}
+                        </span>
+                        <ArrowRight
+                          aria-hidden="true"
+                          className="h-[14px] w-[14px] transition-transform duration-300 ease-brand group-hover:translate-x-1"
+                        />
+                      </a>
+                    ) : null}
                   </li>
                 ))}
               </ul>
